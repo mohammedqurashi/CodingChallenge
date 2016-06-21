@@ -1,0 +1,11 @@
+C:\CodingChallenge\CodingChallenge\Cost\bin\Debug\Cost.exe
+C:\CodingChallenge\CodingChallenge\Cost\bin\Debug\Cost.exe.config
+C:\CodingChallenge\CodingChallenge\Cost\bin\Debug\Cost.pdb
+C:\CodingChallenge\CodingChallenge\Cost\obj\Debug\Cost.exe
+C:\CodingChallenge\CodingChallenge\Cost\obj\Debug\Cost.pdb
+C:\SourceCode\CodingChallenge\Cost\bin\Debug\Cost.exe.config
+C:\SourceCode\CodingChallenge\Cost\obj\Debug\Cost.exe
+C:\SourceCode\CodingChallenge\Cost\obj\Debug\Cost.pdb
+C:\SourceCode\CodingChallenge\Cost\bin\Debug\Cost.exe
+C:\SourceCode\CodingChallenge\Cost\bin\Debug\Cost.pdb
+C:\SourceCode\CodingChallenge\Cost\obj\Debug\Calculation.csprojResolveAssemblyReference.cache
