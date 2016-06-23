@@ -10,7 +10,7 @@ namespace Calculation
             //TODO: Something
         }
 
-        public int CalculatedIndivisualScore(Resource res, Openning opn)
+        public int CalculatedIndivisualScore(Resource res, Openning opn, bool IsWithPanelty = true)
         {
             double score = 0;
 
@@ -29,8 +29,12 @@ namespace Calculation
                     score = !opn.IsKeyProject && opn.IsKeyPosition ? Math.Max(1.5, score) : score;
                     score = !opn.IsKeyProject && !opn.IsKeyPosition ? Math.Max(1, score) : score;
 
-                //TimeSpan ts = opn.AllocationEndDate - DateTime.Now;
-                //score = score - (ts.Days) * paneltyfactor;
+                    if(IsWithPanelty)
+                    {
+                        TimeSpan ts = opn.AllocationEndDate - DateTime.Now;
+                        score = Math.Max(0, score - ((ts.Days)/36) * 0.02); // panelty factor assume 0.2
+                    }
+
                 }
           
 

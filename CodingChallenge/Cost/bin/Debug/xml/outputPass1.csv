@@ -7,7 +7,7 @@
 634,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,329,WMS,WMS,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,925,1000,1000
 531,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,328,WMS,WMS,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,924,1000,1000
 424,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,1000,UID,UI re-design,1/1/2017 12:00:00 AM,4/1/2017 12:00:00 AM,923,1000,1000
-812,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,java-intermediate,505,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,504,880,892
+812,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,java-intermediate,501,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,500,890,902
 202,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,327,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,922,1000,1000
 155,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,.net-beginner+ wpf-beginner,908,AUT,Automation,10/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,907,1000,1000
 715,java-expert+java-intermediate+java-beginner,6/28/2016 12:00:00 AM,.net-beginner+ wpf-beginner,907,AUT,Automation,10/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,906,1000,1000
@@ -17,10 +17,10 @@
 710,java-expert+java-intermediate+java-beginner,6/30/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,852,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,851,1000,1000
 454,java-expert+java-intermediate+java-beginner,6/30/2016 12:00:00 AM,java-expert,756,ERD,eReader,8/1/2016 12:00:00 AM,3/31/2017 12:00:00 AM,497,800,814
 152,java-expert+java-intermediate+java-beginner,7/18/2016 12:00:00 AM,java-expert,748,OAN,Online analytics,7/22/2016 12:00:00 AM,12/31/2016 12:00:00 AM,496,850,860
-834,java-expert+java-intermediate+java-beginner,7/22/2016 12:00:00 AM,java-intermediate,751,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,750,880,894
+834,java-expert+java-intermediate+java-beginner,7/22/2016 12:00:00 AM,java-intermediate,516,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,515,890,902
 445,java-expert+java-intermediate+java-beginner,8/1/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,851,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,850,1000,1000
 506,java-expert+java-intermediate+java-beginner,8/13/2016 12:00:00 AM,java-expert,69,MRE,Mobile re-design,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,747,800,828
-760,java-expert+java-intermediate+java-beginner,9/1/2016 12:00:00 AM,java-intermediate,815,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,814,890,904
+760,java-expert+java-intermediate+java-beginner,9/1/2016 12:00:00 AM,java-intermediate,808,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,807,880,894
 258,java-expert+java-intermediate+java-beginner,9/25/2016 12:00:00 AM,java-expert,749,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,534,850,864
 783,java-expert+java-intermediate+java-beginner,9/30/2016 12:00:00 AM,java-intermediate,521,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,520,870,882
 242,java-expert+java-intermediate+java-beginner,12/31/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,850,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,849,1000,1000
@@ -32,28 +32,28 @@
 2001,java-intermediate+java-beginner,10/1/2016 12:00:00 AM,java-intermediate,522,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,521,855,867
 1970,java-intermediate+java-beginner,9/30/2016 12:00:00 AM,.net-beginner+ wpf-beginner,846,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,845,1000,1000
 1156,java-intermediate+java-beginner,10/1/2016 12:00:00 AM,.net-intermediate+ sharepoint-beginner,835,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,833,1000,1000
-1881,java-intermediate+java-beginner,9/21/2016 12:00:00 AM,java-intermediate,808,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,807,880,894
+1881,java-intermediate+java-beginner,9/21/2016 12:00:00 AM,java-intermediate,751,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,750,880,894
 1636,java-intermediate+java-beginner,9/12/2016 12:00:00 AM,.net-intermediate+ sharepoint-beginner,834,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,832,1000,1000
 1247,java-intermediate+java-beginner,11/11/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,823,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,822,1000,1000
-1913,java-intermediate+java-beginner,6/30/2016 12:00:00 AM,java-intermediate,501,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,500,890,902
+1913,java-intermediate+java-beginner,6/30/2016 12:00:00 AM,java-intermediate,505,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,504,880,892
 1796,java-intermediate+java-beginner,1/15/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,821,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,820,1000,1000
 1276,java-intermediate+java-beginner,4/15/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,819,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,818,1000,1000
 1823,java-intermediate+java-beginner,5/20/2016 12:00:00 AM,java-intermediate,515,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,514,880,892
 1030,java-intermediate+java-beginner,6/6/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,796,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,795,1000,1000
 1118,java-intermediate+java-beginner,6/1/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,794,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,793,1000,1000
-2131,java-intermediate+java-beginner,5/20/2016 12:00:00 AM,java-intermediate,809,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,808,855,869
+2131,java-intermediate+java-beginner,5/20/2016 12:00:00 AM,java-intermediate,815,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,814,855,869
 967,java-intermediate+java-beginner,5/20/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,792,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,791,1000,1000
 1827,java-intermediate+java-beginner,4/22/2016 12:00:00 AM,java-expert+ mongodb-expert,783,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,782,1000,1000
 1825,java-intermediate+java-beginner,5/20/2016 12:00:00 AM,java-intermediate,814,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,813,850,864
 1572,java-intermediate+java-beginner,6/28/2016 12:00:00 AM,java-expert+ mongodb-expert,782,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,781,1000,1000
 1116,java-intermediate+java-beginner,4/15/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,779,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,778,1000,1000
-1956,java-intermediate+java-beginner,6/17/2016 12:00:00 AM,java-intermediate,752,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,751,855,869
+1956,java-intermediate+java-beginner,6/17/2016 12:00:00 AM,java-intermediate,809,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,808,855,869
 1537,java-intermediate+java-beginner,7/1/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,776,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,775,1000,1000
 1152,java-intermediate+java-beginner,4/8/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,36,UID,UI re-design,11/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,773,1000,1000
 1623,java-intermediate+java-beginner,6/20/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,773,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,772,1000,1000
 1487,java-intermediate+java-beginner,6/1/2016 12:00:00 AM,.net-expert+ sharepoint-expert,770,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,762,1000,1000
 1313,java-intermediate+java-beginner,5/12/2016 12:00:00 AM,java-intermediate,750,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,749,850,864
-2063,java-intermediate+java-beginner,5/2/2016 12:00:00 AM,java-intermediate,516,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,515,855,867
+2063,java-intermediate+java-beginner,5/2/2016 12:00:00 AM,java-intermediate,752,OAN,Online analytics,9/30/2016 12:00:00 AM,3/3/2017 12:00:00 AM,751,855,869
 1687,java-intermediate+java-beginner,6/1/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,734,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,733,1000,1000
 1323,java-intermediate+java-beginner,6/1/2016 12:00:00 AM,java-intermediate,514,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,513,850,862
 1720,java-intermediate+java-beginner,5/27/2016 12:00:00 AM,java-intermediate,506,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,505,890,902
@@ -66,13 +66,13 @@
 3374,java-beginner,4/30/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,731,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,730,1000,1000
 3939,java-beginner,5/13/2016 12:00:00 AM,java-beginner,525,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,580,890,902
 2598,java-beginner,5/13/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,730,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,729,1000,1000
-3268,java-beginner,5/20/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,698,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,697,1000,1000
+3268,java-beginner,5/20/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,729,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,728,1000,1000
 3592,java-beginner,5/24/2016 12:00:00 AM,java-beginner,519,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,524,895,907
-2658,java-beginner,5/30/2016 12:00:00 AM,java-beginner+ mongodb-beginner,696,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,695,1000,1000
-3425,java-beginner,5/31/2016 12:00:00 AM,java-beginner+ mongodb-beginner,694,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,693,1000,1000
+2658,java-beginner,5/30/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,698,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,697,1000,1000
+3425,java-beginner,5/31/2016 12:00:00 AM,java-beginner+ mongodb-beginner,696,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,695,1000,1000
 2177,java-beginner,5/31/2016 12:00:00 AM,java-beginner,523,RCI,Real-time check in,11/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,578,860,872
-2334,java-beginner,6/1/2016 12:00:00 AM,java-beginner+ mongodb-beginner,691,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,690,1000,1000
-2877,java-beginner,6/1/2016 12:00:00 AM,java-beginner+ mongodb-beginner,689,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,688,1000,1000
+2334,java-beginner,6/1/2016 12:00:00 AM,java-beginner+ mongodb-beginner,694,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,693,1000,1000
+2877,java-beginner,6/1/2016 12:00:00 AM,java-beginner+ mongodb-beginner,691,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,690,1000,1000
 2409,java-beginner,6/1/2016 12:00:00 AM,.net-expert+ sql server-expert,832,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,600,1000,1000
 3608,java-beginner,6/1/2016 12:00:00 AM,java-beginner,690,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,502,890,910
 3128,java-beginner,6/1/2016 12:00:00 AM,.net-expert+ sql server-expert,831,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,599,1000,1000
@@ -108,7 +108,7 @@
 288,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,5/13/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,343,WMS,WMS,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,342,1000,1000
 208,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,5/20/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,780,EPF,EFPR,8/1/2016 12:00:00 AM,12/31/2016 12:00:00 AM,328,1000,1000
 786,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,6/1/2016 12:00:00 AM,java-expert,103,FCI,Mobility solutions for fast check in,7/20/2016 12:00:00 AM,12/31/2016 12:00:00 AM,274,800,810
-571,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,6/1/2016 12:00:00 AM,java-expert,535,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,267,800,836
+571,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,6/1/2016 12:00:00 AM,java-expert,535,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,267,800,834
 746,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,6/10/2016 12:00:00 AM,java-expert+ oracle-expert,136,FLM,Flight maintenace,7/3/2016 12:00:00 AM,10/1/2016 12:00:00 AM,135,800,804
 316,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,6/13/2016 12:00:00 AM,java-expert+ oracle-expert,51,ONB,Online banking,7/1/2016 12:00:00 AM,6/1/2017 12:00:00 AM,50,800,818
 659,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,6/28/2016 12:00:00 AM,java-expert+ oracle-expert,50,ONB,Online banking,7/1/2016 12:00:00 AM,6/1/2017 12:00:00 AM,49,800,818
@@ -131,31 +131,31 @@
 1590,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,4/29/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,5,ONB,Online banking,5/1/2016 12:00:00 AM,1/1/2017 12:00:00 AM,4,870,880
 1523,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,4/30/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,4,ONB,Online banking,5/1/2016 12:00:00 AM,1/1/2017 12:00:00 AM,3,870,880
 1039,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/2/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,357,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,295,880,902
-987,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/3/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,547,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,540,870,906
-1794,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/25/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,546,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,539,870,906
-1724,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/27/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,545,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,538,870,906
-859,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,544,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,537,870,906
+987,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/3/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,547,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,540,870,904
+1794,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/25/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,546,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,539,870,904
+1724,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/27/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,545,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,538,870,904
+859,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,544,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,537,870,904
 1891,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,299,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,260,855,877
-1879,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,536,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,356,870,906
+1879,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,536,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,356,870,904
 856,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,355,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,270,850,872
 2130,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/8/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,298,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,138,880,902
 1978,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/11/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,297,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,137,880,902
-992,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/19/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,543,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,536,870,906
-974,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/25/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,542,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,535,870,906
-925,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/25/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,530,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,354,800,836
-1464,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,539,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,528,870,906
-1066,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,541,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,530,870,906
-1696,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,540,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,529,870,906
+992,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/19/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,543,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,536,870,904
+974,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/25/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,542,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,535,870,904
+925,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/25/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,530,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,354,800,834
+1464,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,539,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,528,870,904
+1066,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,541,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,530,870,904
+1696,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,540,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,529,870,904
 2220,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,726,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,743,890,910
-985,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,538,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,378,870,906
-957,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,537,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,377,870,906
+985,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,538,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,378,870,904
+957,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,537,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,377,870,904
 1695,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,725,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,742,895,915
-1771,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,531,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,355,800,836
+1771,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,531,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,355,800,834
 2184,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,724,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,725,890,910
-927,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,529,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,353,800,836
-988,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,139,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,352,800,836
-901,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,138,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,351,800,836
-1639,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,137,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,298,800,836
+927,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,529,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,353,800,834
+988,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,139,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,352,800,834
+901,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,138,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,351,800,834
+1639,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,137,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,298,800,834
 1379,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,12/31/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,271,MRE,Mobile re-design,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,723,870,898
 2219,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,3/4/2017 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,771,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,325,1000,1000
 601,java-expert+ oracle-intermediate+java-intermediate+java-beginner+ oracle-beginner,3/23/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,356,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,294,875,897
@@ -211,44 +211,44 @@
 3593,java-beginner+ oracle-beginner,5/27/2016 12:00:00 AM,java-beginner+ oracle-beginner,61,MRE,Mobile re-design,6/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,55,870,898
 3051,java-beginner+ oracle-beginner,5/27/2016 12:00:00 AM,java-beginner+ oracle-beginner,60,MRE,Mobile re-design,6/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,54,870,898
 3459,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ oracle-beginner,315,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,266,900,922
-2035,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,586,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,201,870,906
-3243,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,585,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,200,870,906
-3559,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,584,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,199,870,906
-3509,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,583,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,198,870,906
+2035,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,586,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,201,870,904
+3243,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,585,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,200,870,904
+3559,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,584,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,199,870,904
+3509,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner,583,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,198,870,904
 3494,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ oracle-beginner,308,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,72,850,872
 3674,java-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ oracle-beginner,307,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,71,890,912
-1976,java-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-beginner,513,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,86,900,912
-3175,java-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-beginner,504,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,79,900,912
+1976,java-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-beginner,581,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,196,870,904
+3175,java-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-beginner,513,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,86,900,912
 3305,java-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-beginner,49,FCI,Mobility solutions for fast check in,6/20/2016 12:00:00 AM,9/15/2016 12:00:00 AM,47,870,874
 2363,java-beginner+ oracle-beginner,6/8/2016 12:00:00 AM,java-beginner,48,FCI,Mobility solutions for fast check in,6/20/2016 12:00:00 AM,9/15/2016 12:00:00 AM,46,870,874
 2036,java-beginner+ oracle-beginner,6/8/2016 12:00:00 AM,java-beginner,47,FCI,Mobility solutions for fast check in,6/20/2016 12:00:00 AM,9/15/2016 12:00:00 AM,45,870,874
 4322,java-beginner+ oracle-beginner,6/8/2016 12:00:00 AM,java-beginner,46,FCI,Mobility solutions for fast check in,6/20/2016 12:00:00 AM,9/15/2016 12:00:00 AM,44,870,874
 3329,java-beginner+ oracle-beginner,6/9/2016 12:00:00 AM,java-beginner+ oracle-beginner,306,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,70,890,912
-3111,java-beginner+ oracle-beginner,6/23/2016 12:00:00 AM,java-beginner+ oracle-beginner,597,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,388,870,906
-2093,java-beginner+ oracle-beginner,6/23/2016 12:00:00 AM,java-beginner+ oracle-beginner,596,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,387,870,906
-4563,java-beginner+ oracle-beginner,6/24/2016 12:00:00 AM,java-beginner+ oracle-beginner,595,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,386,870,906
+3111,java-beginner+ oracle-beginner,6/23/2016 12:00:00 AM,java-beginner+ oracle-beginner,597,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,388,870,904
+2093,java-beginner+ oracle-beginner,6/23/2016 12:00:00 AM,java-beginner+ oracle-beginner,596,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,387,870,904
+4563,java-beginner+ oracle-beginner,6/24/2016 12:00:00 AM,java-beginner+ oracle-beginner,595,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,386,870,904
 3876,java-beginner+ oracle-beginner,6/25/2016 12:00:00 AM,java-beginner,512,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,85,890,902
 3081,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner,511,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,84,895,907
-3048,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,594,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,385,870,906
-3665,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,593,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,384,870,906
-2195,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,592,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,383,870,906
-2207,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,591,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,382,870,906
-3997,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,590,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,381,870,906
-3726,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,589,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,380,870,906
+3048,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,594,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,385,870,904
+3665,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,593,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,384,870,904
+2195,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,592,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,383,870,904
+2207,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,591,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,382,870,904
+3997,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,590,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,381,870,904
+3726,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,589,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,380,870,904
 3917,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner,510,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,83,890,902
-3400,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,588,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,379,870,906
-3467,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,587,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,317,870,906
+3400,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,588,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,379,870,904
+3467,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ oracle-beginner,587,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,317,870,904
 3612,java-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner,508,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,81,890,902
-3344,java-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,582,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,197,870,906
+3344,java-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,582,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,197,870,904
 3823,java-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,509,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,82,890,902
-3776,java-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,581,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,196,870,906
+3776,java-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,504,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,79,900,912
 3678,java-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,53,ONB,Online banking,7/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,67,870,878
 3502,java-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,503,RCI,Real-time check in,7/1/2016 12:00:00 AM,2/1/2017 12:00:00 AM,78,850,862
 2287,java-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-beginner+ oracle-beginner,745,LOP,Logistics planning,7/20/2016 12:00:00 AM,12/31/2016 12:00:00 AM,389,890,900
-3032,java-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-beginner,580,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,88,870,906
+3032,java-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-beginner,580,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,88,870,904
 3643,java-beginner+ oracle-beginner,7/4/2016 12:00:00 AM,java-beginner+ oracle-beginner,77,ONB,Online banking,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,596,870,898
 3641,java-beginner+ oracle-beginner,7/7/2016 12:00:00 AM,java-beginner,202,FCI,Mobility solutions for fast check in,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,817,870,888
-2089,android-beginner,2/29/2016 12:00:00 AM,android-beginner,40,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,39,870,874
+2089,android-beginner,2/29/2016 12:00:00 AM,android-beginner,41,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,40,870,874
 406,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,2/29/2016 12:00:00 AM,.net-beginner+ wpf-beginner,479,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,478,900,908
 676,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,3/23/2016 12:00:00 AM,.net-beginner+ wpf-beginner,478,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,477,900,908
 1261,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,4/8/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,424,CDM,Customer document management,6/15/2016 12:00:00 AM,9/30/2016 12:00:00 AM,423,900,904
@@ -262,9 +262,9 @@
 893,android-expert+android-intermediate+android-beginner,7/18/2016 12:00:00 AM,android-intermediate,288,RMC,RMC,9/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,287,865,873
 1222,ios-expert+ios-intermediate+ios-beginner,6/28/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,323,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,322,1000,1000
 1475,ios-expert+ios-intermediate+ios-beginner,6/28/2016 12:00:00 AM,ios-expert,105,FCI,Mobility solutions for fast check in,9/1/2016 12:00:00 AM,6/1/2017 12:00:00 AM,104,800,818
-1638,android-beginner,4/25/2016 12:00:00 AM,android-beginner,41,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,40,870,874
+1638,android-beginner,4/25/2016 12:00:00 AM,android-beginner,40,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,39,870,874
 1669,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,4/8/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,95,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,94,870,874
-1846,android-beginner,5/20/2016 12:00:00 AM,android-beginner,127,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,126,860,874
+1846,android-beginner,5/20/2016 12:00:00 AM,android-beginner,127,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,126,860,872
 1628,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,4/30/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,94,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,93,870,874
 976,ios-expert+ios-intermediate+ios-beginner,7/18/2016 12:00:00 AM,ios-intermediate,289,RMC,RMC,10/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,276,865,873
 1015,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,4/29/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,421,CDM,Customer document management,6/15/2016 12:00:00 AM,9/30/2016 12:00:00 AM,420,865,869
@@ -273,7 +273,7 @@
 1741,ios-beginner,5/13/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,321,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,320,1000,1000
 1114,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,5/31/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,373,CON,CRM online,6/15/2016 12:00:00 AM,7/15/2016 12:00:00 AM,372,800,800
 669,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,5/31/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,371,CON,CRM online,6/15/2016 12:00:00 AM,7/15/2016 12:00:00 AM,370,800,800
-1350,ios-intermediate+ios-beginner,6/30/2016 12:00:00 AM,ios-intermediate,118,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,288,870,884
+1350,ios-intermediate+ios-beginner,6/30/2016 12:00:00 AM,ios-intermediate,118,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,288,870,882
 1483,ios-intermediate+ios-beginner,6/30/2016 12:00:00 AM,ios-beginner,191,FCI,Mobility solutions for fast check in,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,190,870,888
 1147,ios-intermediate+ios-beginner,9/12/2016 12:00:00 AM,ios-beginner,190,FCI,Mobility solutions for fast check in,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,189,870,888
 1307,ios-intermediate+ios-beginner,9/12/2016 12:00:00 AM,ios-beginner,189,FCI,Mobility solutions for fast check in,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,188,870,888
@@ -301,24 +301,24 @@
 234,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,5/2/2016 12:00:00 AM,java-expert+ angularjs-expert+ oracle-expert,754,ERD,eReader,8/1/2016 12:00:00 AM,3/31/2017 12:00:00 AM,753,800,814
 227,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,5/30/2016 12:00:00 AM,java-expert+ angularjs-expert+ oracle-expert,680,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,679,850,870
 151,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,5/31/2016 12:00:00 AM,java-expert+ angularjs-expert+ oracle-expert,679,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,678,850,870
-363,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,557,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,556,870,906
-266,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,556,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,555,870,906
-206,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/1/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,555,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,554,870,906
-315,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/3/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,554,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,553,870,906
-187,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/13/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,553,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,552,870,906
-464,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/30/2016 12:00:00 AM,java-expert+ angularjs-expert+ oracle-expert,532,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,531,800,836
-269,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/30/2016 12:00:00 AM,java-expert+ angularjs-expert+ oracle-expert,140,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,139,800,836
+363,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,557,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,556,870,904
+266,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,556,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,555,870,904
+206,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/1/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,555,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,554,870,904
+315,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/3/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,554,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,553,870,904
+187,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/13/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,553,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,552,870,904
+464,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/30/2016 12:00:00 AM,java-expert+ angularjs-expert+ oracle-expert,532,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,531,800,834
+269,java-expert+ angularjs-expert+ oracle-expert+java-intermediate+java-beginner+ angularjs-intermediate+ angularjs-beginner+ oracle-intermediate+ oracle-beginner,6/30/2016 12:00:00 AM,java-expert+ angularjs-expert+ oracle-expert,140,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,139,800,834
 784,java-expert+ angularjs-intermediate+ oracle-intermediate+java-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-expert+ angularjs-intermediate+ oracle-intermediate,681,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,680,850,870
 585,java-expert+ angularjs-intermediate+ oracle-intermediate+java-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/3/2016 12:00:00 AM,java-intermediate+ angularjs-beginner+ oracle-intermediate,710,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,709,875,895
-458,java-expert+ angularjs-intermediate+ oracle-intermediate+java-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,552,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,551,870,906
+458,java-expert+ angularjs-intermediate+ oracle-intermediate+java-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,552,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,551,870,904
 806,java-expert+ angularjs-intermediate+ oracle-intermediate+java-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,11/11/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,715,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,714,900,920
-894,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,141,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,140,800,836
-1161,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,551,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,550,870,906
+894,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,141,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,140,800,834
+1161,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,5/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,551,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,550,870,904
 1376,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/10/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,683,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,682,855,875
-959,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/13/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,550,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,549,870,906
-1129,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/13/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,549,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,548,870,906
-943,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,548,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,547,870,906
-1157,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,533,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,532,800,836
+959,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/13/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,550,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,549,870,904
+1129,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/13/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,549,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,548,870,904
+943,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,548,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,547,870,904
+1157,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,533,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,532,800,834
 1034,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,7/11/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,755,ERD,eReader,8/1/2016 12:00:00 AM,3/31/2017 12:00:00 AM,754,870,884
 1005,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,7/11/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,54,ONB,Online banking,9/1/2016 12:00:00 AM,6/1/2017 12:00:00 AM,544,800,818
 1762,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,7/11/2016 12:00:00 AM,java-intermediate+ angularjs-beginner+ oracle-intermediate,682,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,681,880,900
@@ -328,17 +328,17 @@
 1027,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,11/11/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,269,MRE,Mobile re-design,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,708,800,828
 1065,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,11/11/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,262,MRE,Mobile re-design,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,546,870,898
 1453,java-intermediate+ angularjs-intermediate+ oracle-intermediate+java-beginner+ angularjs-beginner+ oracle-beginner,12/31/2016 12:00:00 AM,java-intermediate+ angularjs-intermediate+ oracle-intermediate,707,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,706,855,875
-2245,ios-beginner,5/31/2016 12:00:00 AM,ios-beginner,126,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,125,870,884
-1339,ios-beginner,6/1/2016 12:00:00 AM,ios-beginner,124,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,123,870,884
+2245,ios-beginner,5/31/2016 12:00:00 AM,ios-beginner,126,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,125,870,882
+1339,ios-beginner,6/1/2016 12:00:00 AM,ios-beginner,124,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,123,870,882
 1607,android-intermediate+android-beginner,4/30/2016 12:00:00 AM,android-intermediate,99,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,98,870,874
 1544,android-intermediate+android-beginner,5/16/2016 12:00:00 AM,android-intermediate,98,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,97,870,874
 1346,android-intermediate+android-beginner,7/11/2016 12:00:00 AM,android-intermediate,107,FCI,Mobility solutions for fast check in,9/1/2016 12:00:00 AM,6/1/2017 12:00:00 AM,106,800,818
 1752,android-intermediate+android-beginner,12/31/2016 12:00:00 AM,android-beginner,185,FCI,Mobility solutions for fast check in,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,184,870,888
 1272,java-intermediate+ angularjs-beginner+ oracle-intermediate+java-beginner+ oracle-beginner,5/16/2016 12:00:00 AM,java-intermediate+ oracle-intermediate,354,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,269,850,872
 1552,android-intermediate+android-beginner,12/31/2016 12:00:00 AM,android-beginner,186,FCI,Mobility solutions for fast check in,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,185,870,888
-2136,android-beginner,6/1/2016 12:00:00 AM,android-beginner,125,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,124,870,884
-1890,android-beginner,6/1/2016 12:00:00 AM,android-beginner,123,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,122,870,884
-1833,android-beginner,6/28/2016 12:00:00 AM,android-beginner,121,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,120,800,814
+2136,android-beginner,6/1/2016 12:00:00 AM,android-beginner,125,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,124,870,882
+1890,android-beginner,6/1/2016 12:00:00 AM,android-beginner,123,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,122,870,882
+1833,android-beginner,6/28/2016 12:00:00 AM,android-beginner,121,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,120,800,812
 1719,android-beginner,12/31/2016 12:00:00 AM,android-beginner,187,FCI,Mobility solutions for fast check in,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,186,870,888
 1388,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,6/6/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,994,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,993,900,914
 907,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,6/6/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,992,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,991,900,914
@@ -367,51 +367,51 @@
 2654,java-beginner+ angularjs-beginner+ oracle-beginner,5/13/2016 12:00:00 AM,java-beginner+ oracle-beginner,303,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,62,850,872
 1947,java-beginner+ angularjs-beginner+ oracle-beginner,5/16/2016 12:00:00 AM,java-beginner+ oracle-beginner,302,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,61,890,912
 2746,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,693,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,692,900,920
-2419,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,576,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,575,870,906
-3023,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,575,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,574,870,906
+2419,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,576,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,575,870,904
+3023,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,575,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,574,870,904
 2100,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ oracle-beginner,301,FDP,Front desk payment resolution,6/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,60,890,912
-2555,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,574,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,573,870,906
-3000,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,573,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,572,870,906
+2555,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,574,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,573,870,904
+3000,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,573,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,572,870,904
 1921,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,686,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,685,855,875
-4567,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,572,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,571,870,906
-3881,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,571,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,570,870,906
-2404,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,570,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,569,870,906
-2602,java-beginner+ angularjs-beginner+ oracle-beginner,6/9/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,569,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,568,870,906
-2292,java-beginner+ angularjs-beginner+ oracle-beginner,6/13/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,568,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,567,870,906
-2542,java-beginner+ angularjs-beginner+ oracle-beginner,6/15/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,567,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,566,870,906
-3456,java-beginner+ angularjs-beginner+ oracle-beginner,6/20/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,566,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,565,870,906
-2623,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,565,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,564,870,906
-2516,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,564,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,563,870,906
-2336,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,563,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,562,870,906
-2683,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,562,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,561,870,906
-2478,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,561,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,560,870,906
-2301,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,560,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,559,870,906
-2382,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,559,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,558,870,906
-2291,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,558,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,557,870,906
+4567,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,572,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,571,870,904
+3881,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,571,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,570,870,904
+2404,java-beginner+ angularjs-beginner+ oracle-beginner,6/1/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,570,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,569,870,904
+2602,java-beginner+ angularjs-beginner+ oracle-beginner,6/9/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,569,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,568,870,904
+2292,java-beginner+ angularjs-beginner+ oracle-beginner,6/13/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,568,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,567,870,904
+2542,java-beginner+ angularjs-beginner+ oracle-beginner,6/15/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,567,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,566,870,904
+3456,java-beginner+ angularjs-beginner+ oracle-beginner,6/20/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,566,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,565,870,904
+2623,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,565,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,564,870,904
+2516,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,564,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,563,870,904
+2336,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,563,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,562,870,904
+2683,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,562,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,561,870,904
+2478,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,561,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,560,870,904
+2301,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,560,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,559,870,904
+2382,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,559,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,558,870,904
+2291,java-beginner+ angularjs-beginner+ oracle-beginner,6/28/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,558,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,557,870,904
 3498,java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,20,ONB,Online banking,7/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,64,870,878
 2574,java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,19,ONB,Online banking,7/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,52,870,878
 2828,java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,688,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,687,855,875
 2700,java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,18,ONB,Online banking,7/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,51,870,878
 2557,java-beginner+ angularjs-beginner+ oracle-beginner,6/30/2016 12:00:00 AM,java-beginner,17,ONB,Online banking,7/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,48,870,878
-2331,java-beginner+ angularjs-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-beginner,579,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,87,870,906
+2331,java-beginner+ angularjs-beginner+ oracle-beginner,7/1/2016 12:00:00 AM,java-beginner,579,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,87,870,904
 3897,java-beginner+ angularjs-beginner+ oracle-beginner,7/3/2016 12:00:00 AM,java-expert+ mongodb-expert,678,SNE,S98,7/15/2016 12:00:00 AM,8/31/2016 12:00:00 AM,108,1000,1000
 2750,java-beginner+ angularjs-beginner+ oracle-beginner,11/11/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,718,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,717,855,875
 3564,java-beginner+ angularjs-beginner+ oracle-beginner,11/11/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,721,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,720,900,920
 2309,java-beginner+ angularjs-beginner+ oracle-beginner,12/31/2016 12:00:00 AM,java-beginner+ angularjs-beginner+ oracle-beginner,719,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,718,900,920
-214,java-expert+ aws cloud-expert+java-intermediate+java-beginner+ aws cloud-intermediate+ aws cloud-beginner,4/29/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,578,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,577,870,906
-156,java-expert+ aws cloud-expert+java-intermediate+java-beginner+ aws cloud-intermediate+ aws cloud-beginner,5/10/2016 12:00:00 AM,java-expert+ aws cloud-expert,142,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,141,800,836
-128,java-expert+ aws cloud-expert+java-intermediate+java-beginner+ aws cloud-intermediate+ aws cloud-beginner,1/25/2016 12:00:00 AM,java-expert+ aws cloud-expert,134,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,133,800,836
+214,java-expert+ aws cloud-expert+java-intermediate+java-beginner+ aws cloud-intermediate+ aws cloud-beginner,4/29/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,578,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,577,870,904
+156,java-expert+ aws cloud-expert+java-intermediate+java-beginner+ aws cloud-intermediate+ aws cloud-beginner,5/10/2016 12:00:00 AM,java-expert+ aws cloud-expert,142,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,141,800,834
+128,java-expert+ aws cloud-expert+java-intermediate+java-beginner+ aws cloud-intermediate+ aws cloud-beginner,1/25/2016 12:00:00 AM,java-expert+ aws cloud-expert,134,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,133,800,834
 747,java-expert+ aws cloud-intermediate+java-intermediate+java-beginner+ aws cloud-beginner,3/31/2016 12:00:00 AM,java-beginner,45,FCI,Mobility solutions for fast check in,6/20/2016 12:00:00 AM,9/15/2016 12:00:00 AM,43,870,874
-847,java-intermediate+ aws cloud-intermediate+java-beginner+ aws cloud-beginner,5/4/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,577,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,576,870,906
-1254,java-intermediate+ aws cloud-intermediate+java-beginner+ aws cloud-beginner,6/1/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,527,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,526,800,836
-1826,java-intermediate+ aws cloud-intermediate+java-beginner+ aws cloud-beginner,6/6/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,135,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,134,800,836
+847,java-intermediate+ aws cloud-intermediate+java-beginner+ aws cloud-beginner,5/4/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,577,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,576,870,904
+1254,java-intermediate+ aws cloud-intermediate+java-beginner+ aws cloud-beginner,6/1/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,527,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,526,800,834
+1826,java-intermediate+ aws cloud-intermediate+java-beginner+ aws cloud-beginner,6/6/2016 12:00:00 AM,java-intermediate+ aws cloud-intermediate,135,FLM,Flight maintenace,7/3/2016 12:00:00 AM,4/1/2018 12:00:00 AM,134,800,834
 1340,java-intermediate+ aws cloud-intermediate+java-beginner+ aws cloud-beginner,5/29/2017 12:00:00 AM,java-expert+ mongodb-expert,677,SNE,S98,7/15/2016 12:00:00 AM,8/31/2016 12:00:00 AM,107,1000,1000
-1492,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,996,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,788,900,914
+1492,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,689,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,688,900,920
 1480,android-beginner,6/28/2016 12:00:00 AM,ios-intermediate,277,RMC,RMC,6/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,105,1000,1000
 1885,android-beginner,6/28/2016 12:00:00 AM,.net-expert+ azure-expert,102,INF,Informatics,7/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,101,1000,1000
 2221,android-beginner,11/11/2016 12:00:00 AM,android-intermediate,97,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,96,1000,1000
-1951,ios-beginner,6/1/2016 12:00:00 AM,ios-beginner,122,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,121,870,884
-1964,ios-beginner,6/1/2016 12:00:00 AM,ios-beginner,120,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,119,870,884
+1951,ios-beginner,6/1/2016 12:00:00 AM,ios-beginner,122,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,121,870,882
+1964,ios-beginner,6/1/2016 12:00:00 AM,ios-beginner,120,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,119,870,882
 2170,ios-beginner,6/3/2016 12:00:00 AM,android-intermediate,96,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,95,1000,1000
 1980,ios-beginner,6/15/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,93,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,92,1000,1000
 1857,ios-beginner,6/28/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,92,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,91,1000,1000
@@ -452,14 +452,14 @@
 438,java-expert+ mongodb-expert+java-intermediate+java-beginner+ mongodb-intermediate+ mongodb-beginner,7/22/2016 12:00:00 AM,java-expert+ mongodb-expert,109,FCI,Mobility solutions for fast check in,9/1/2016 12:00:00 AM,6/1/2017 12:00:00 AM,677,800,818
 451,java-expert+ mongodb-expert+java-intermediate+java-beginner+ mongodb-intermediate+ mongodb-beginner,8/13/2016 12:00:00 AM,java-expert+ mongodb-expert,108,FCI,Mobility solutions for fast check in,9/1/2016 12:00:00 AM,6/1/2017 12:00:00 AM,676,800,818
 1165,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,7/22/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,993,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,992,850,864
-941,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,729,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,728,900,920
-1515,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,8/31/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,728,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,727,900,920
+941,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,728,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,727,900,920
+1515,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,8/31/2016 12:00:00 AM,java-beginner+ mongodb-beginner,784,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,710,900,914
 1844,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,11/30/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,727,SNE,S98,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,726,900,920
 871,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,12/31/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,708,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,707,900,920
-2029,java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-beginner+ mongodb-beginner,995,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,787,900,914
-2008,java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-beginner+ mongodb-beginner,989,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,786,900,914
-2630,java-beginner+ mongodb-beginner,7/22/2016 12:00:00 AM,java-beginner+ mongodb-beginner,988,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,785,900,914
-2860,java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-beginner+ mongodb-beginner,790,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,784,900,914
+2029,java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-beginner+ mongodb-beginner,996,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,788,900,914
+2008,java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-beginner+ mongodb-beginner,995,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,787,900,914
+2630,java-beginner+ mongodb-beginner,7/22/2016 12:00:00 AM,java-beginner+ mongodb-beginner,989,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,786,900,914
+2860,java-beginner+ mongodb-beginner,8/13/2016 12:00:00 AM,java-beginner+ mongodb-beginner,988,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,785,900,914
 3300,.net-beginner+ sharepoint-beginner,4/8/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,432,CDM,Customer document management,6/15/2016 12:00:00 AM,9/30/2016 12:00:00 AM,431,880,884
 2376,.net-beginner+ sharepoint-beginner,4/15/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,999,UID,UI re-design,1/1/2017 12:00:00 AM,4/1/2017 12:00:00 AM,998,900,914
 1990,.net-beginner+ sharepoint-beginner,4/29/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,959,WPE,Web performance metrics,8/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,958,870,900
@@ -476,13 +476,13 @@
 408,.net-beginner+ sharepoint-beginner,5/12/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,283,WMS,WMS,7/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,282,890,898
 3009,.net-beginner+ sharepoint-beginner,5/12/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,433,CDM,Customer document management,6/15/2016 12:00:00 AM,9/30/2016 12:00:00 AM,432,900,904
 2740,java-beginner+ mongodb-beginner,6/30/2016 12:00:00 AM,java-beginner+ mongodb-beginner,788,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,721,890,904
-2277,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,789,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,783,900,914
+2277,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,790,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,784,900,914
 2224,java-beginner+ mongodb-beginner,12/31/2016 12:00:00 AM,java-beginner+ mongodb-beginner,714,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,988,900,920
-3649,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,787,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,719,900,914
-2772,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,786,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,715,890,904
-2425,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,785,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,713,900,914
+3649,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,789,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,783,900,914
+2772,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,787,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,719,890,904
+2425,java-beginner+ mongodb-beginner,6/28/2016 12:00:00 AM,java-beginner+ mongodb-beginner,786,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,715,900,914
 2604,java-beginner+ mongodb-beginner,12/31/2016 12:00:00 AM,java-beginner+ mongodb-beginner,711,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,987,900,920
-2872,java-beginner+ mongodb-beginner,6/30/2016 12:00:00 AM,java-beginner+ mongodb-beginner,784,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,710,900,914
+2872,java-beginner+ mongodb-beginner,6/30/2016 12:00:00 AM,java-beginner+ mongodb-beginner,785,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,713,900,914
 2038,.net-beginner+ sql server-beginner,1/25/2016 12:00:00 AM,.net-beginner+ sql server-beginner,897,AUT,Automation,10/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,896,900,908
 3816,.net-beginner+ sql server-beginner,2/19/2016 12:00:00 AM,.net-beginner+ sql server-beginner,871,AUT,Automation,9/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,870,900,908
 2696,.net-beginner+ sql server-beginner,3/9/2016 12:00:00 AM,.net-beginner+ sql server-beginner,870,AUT,Automation,9/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,869,900,908
@@ -551,8 +551,8 @@
 1563,.net-intermediate+.net-beginner,6/23/2016 12:00:00 AM,.net-beginner,471,CDD,Clinical data discovery,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,470,870,936
 569,.net-intermediate+.net-beginner,6/28/2016 12:00:00 AM,.net-beginner,470,CDD,Clinical data discovery,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,469,870,936
 1183,.net-intermediate+.net-beginner,6/28/2016 12:00:00 AM,.net-beginner,174,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,173,870,898
-1554,.net-intermediate+.net-beginner,6/28/2016 12:00:00 AM,.net-beginner,170,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,169,870,898
-2139,.net-intermediate+.net-beginner,6/28/2016 12:00:00 AM,.net-beginner,169,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,168,870,898
+1554,.net-intermediate+.net-beginner,6/28/2016 12:00:00 AM,.net-beginner,169,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,168,870,898
+2139,.net-intermediate+.net-beginner,6/28/2016 12:00:00 AM,.net-beginner,168,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,167,870,898
 876,.net-intermediate+.net-beginner,6/28/2016 12:00:00 AM,.net-intermediate,26,AMT,Asset management,7/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,25,850,854
 575,.net-intermediate+.net-beginner,7/1/2016 12:00:00 AM,.net-intermediate,975,WPE,Web performance metrics,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,974,870,900
 860,.net-intermediate+.net-beginner,7/31/2016 12:00:00 AM,.net-intermediate,974,WPE,Web performance metrics,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,973,870,900
@@ -580,7 +580,7 @@
 2509,.net-beginner,6/1/2016 12:00:00 AM,.net-beginner,173,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,172,870,898
 2446,.net-beginner,6/1/2016 12:00:00 AM,.net-beginner,172,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,171,870,898
 3407,.net-beginner,6/3/2016 12:00:00 AM,.net-beginner,171,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,170,870,898
-2408,.net-beginner,6/8/2016 12:00:00 AM,.net-beginner,168,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,167,870,898
+2408,.net-beginner,6/8/2016 12:00:00 AM,.net-beginner,170,INF,Informatics,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,169,870,898
 2984,.net-beginner,6/10/2016 12:00:00 AM,.net-beginner,23,AMT,Asset management,6/15/2016 12:00:00 AM,9/15/2016 12:00:00 AM,22,900,904
 3474,.net-beginner,6/11/2016 12:00:00 AM,.net-beginner,25,AMT,Asset management,6/15/2016 12:00:00 AM,9/15/2016 12:00:00 AM,24,865,869
 3103,.net-beginner,6/13/2016 12:00:00 AM,.net-beginner,24,AMT,Asset management,6/15/2016 12:00:00 AM,9/15/2016 12:00:00 AM,23,855,859
@@ -951,8 +951,8 @@
 286,.net-expert+ mongodb-expert+.net-intermediate+.net-beginner+ mongodb-intermediate+ mongodb-beginner,6/1/2016 12:00:00 AM,.net-expert+ mongodb-expert,878,WPE,Web performance metrics,9/1/2016 12:00:00 AM,1/1/2018 12:00:00 AM,877,800,830
 251,.net-expert+ mongodb-expert+.net-intermediate+.net-beginner+ mongodb-intermediate+ mongodb-beginner,6/1/2016 12:00:00 AM,.net-expert+ mongodb-expert,874,WPE,Web performance metrics,9/1/2016 12:00:00 AM,1/1/2018 12:00:00 AM,873,800,830
 511,.net-expert+ mongodb-expert+.net-intermediate+.net-beginner+ mongodb-intermediate+ mongodb-beginner,6/1/2016 12:00:00 AM,.net-expert,143,MFR,Multi-facility reporting,7/10/2016 12:00:00 AM,12/31/2016 12:00:00 AM,142,800,810
-687,.net-expert+ mongodb-expert+.net-intermediate+.net-beginner+ mongodb-intermediate+ mongodb-beginner,6/1/2016 12:00:00 AM,.net-expert,101,INF,Informatics,7/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,100,800,814
-349,.net-expert+ mongodb-expert+.net-intermediate+.net-beginner+ mongodb-intermediate+ mongodb-beginner,6/1/2016 12:00:00 AM,.net-expert,100,INF,Informatics,7/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,99,800,814
+687,.net-expert+ mongodb-expert+.net-intermediate+.net-beginner+ mongodb-intermediate+ mongodb-beginner,6/1/2016 12:00:00 AM,.net-expert,101,INF,Informatics,7/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,100,800,812
+349,.net-expert+ mongodb-expert+.net-intermediate+.net-beginner+ mongodb-intermediate+ mongodb-beginner,6/1/2016 12:00:00 AM,.net-expert,100,INF,Informatics,7/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,99,800,812
 1707,.net-intermediate+ mongodb-intermediate+.net-beginner+ mongodb-beginner,1/15/2016 12:00:00 AM,.net-intermediate+ mongodb-intermediate,863,WPE,Web performance metrics,3/1/2016 12:00:00 AM,9/1/2017 12:00:00 AM,862,870,894
 2127,.net-intermediate+ mongodb-intermediate+.net-beginner+ mongodb-beginner,4/15/2016 12:00:00 AM,.net-beginner+ mongodb-beginner,987,WPE,Web performance metrics,11/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,986,870,900
 2264,.net-intermediate+ mongodb-intermediate+.net-beginner+ mongodb-beginner,4/22/2016 12:00:00 AM,.net-beginner+ mongodb-beginner,986,WPE,Web performance metrics,11/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,985,870,900

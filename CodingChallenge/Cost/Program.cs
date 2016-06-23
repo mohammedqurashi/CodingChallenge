@@ -65,6 +65,7 @@ namespace Calculation
             //Console.WriteLine("End Opening Load:" + sw.Elapsed);
             int[,] costs = new int[resources.Count(), openings.Count()];
             int[,] newcost = new int[resources.Count(), openings.Count()];
+            int[,] newcostTrue = new int[resources.Count(), openings.Count()];
             int i = 0, j = 0;
             Scoring score = new Scoring();
             //Console.WriteLine("Start Matrix Preparation :" + sw.Elapsed);
@@ -73,7 +74,9 @@ namespace Calculation
 
                 foreach (var opnn in openings)
                 {
-                    costs[i, j] = newcost[i, j] = score.CalculatedIndivisualScore(res, opnn);
+                    costs[i, j] = newcostTrue[i,j]= score.CalculatedIndivisualScore(res, opnn); //With Penalty
+
+                    newcost[i, j] = score.CalculatedIndivisualScore(res, opnn, false); //Without Panelty
                     j++;
                 }
 
@@ -85,14 +88,66 @@ namespace Calculation
             //Console.WriteLine("End Matrix Preparation:" + sw.Elapsed);
             //Console.WriteLine("Start Calculation :" + sw.Elapsed);
             var resourceAssignments = HungarianAlgorithm.FindAssignments(costs);
+            
+            
+            WriteCSV(resourceAssignments, resources, openings, newcost, newcostTrue, "outputPass1.csv");
+
+            //run PASS 2
+            //SecondResourcePool(resourceAssignments, resources, openings, newcost);
+
             Console.WriteLine("End Calculation :" + sw.Elapsed);
             sw.Stop();
 
-            Console.WriteLine("End Calculation :");
-
-            WriteCSV(resourceAssignments, resources, openings, newcost);
             Console.WriteLine("End");
             Console.ReadKey();
+        }
+
+
+        private static void SecondResourcePool(int [] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
+        {
+     
+            int k = 0;
+            foreach (var resource in resources)
+            {
+                if (costs[k, resourceAssignments[k]] < 1000)
+                {
+                    var opn = openings.Find(o => o.RequestId == resourceAssignments[k]);
+
+                    if (opn != null)
+                    {
+                        resource.AvlDate = opn.AllocationEndDate;
+                        openings.Remove(opn);
+                    }
+                }
+               
+                k++;
+            }
+
+         
+
+            Scoring score = new Scoring();
+            int[,] costs2 = new int[resources.Count(), openings.Count()];
+       
+
+            int i = 0, j = 0;
+            foreach (var res in resources)
+            {
+
+                foreach (var opnn in openings)
+                {
+                    costs2[i, j] =  score.CalculatedIndivisualScore(res, opnn); //With Penalty
+                    j++;
+                }
+
+                i++;
+                j = 0;
+            }
+
+            //var resourceAssignments2 = costs2.FindAssignments();
+            Console.WriteLine("End");
+            //  WriteCSV(resourceAssignments2, resources, openings, costs2, costs2, "outputPass2.csv");
+
+
         }
 
         /// <summary>
@@ -131,9 +186,9 @@ namespace Calculation
         /// <param name="res"></param>
         /// <param name="opn"></param>
         /// <param name="costs"></param>
-        private static void WriteCSV(int[] resourceAssignments,List<Resource> res, List<Openning> opn, int[,] costs)
+        private static void WriteCSV(int[] resourceAssignments,List<Resource> res, List<Openning> opn, int[,] costs, int[,] costTrue, string fileName)
         {
-            string filePath = @"xml\output.csv";
+            string filePath = @"xml\"+ fileName;
             string delimiter = ",";
             int indx = 0;
             StringBuilder sb = new StringBuilder();
@@ -152,7 +207,8 @@ namespace Calculation
                                                          op.RequestStartDate,
                                                          op.AllocationEndDate,
                                                          assignmentID, 
-                                                         costs[indx, assignmentID]));
+                                                         costs[indx, assignmentID],
+                                                         costTrue[indx, assignmentID]));
                     indx++;
                 }
                     
