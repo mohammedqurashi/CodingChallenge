@@ -1,0 +1,12 @@
+C:\SourceCode\CodingChallenge\Cost\bin\x64\Debug\Cost.exe.config
+C:\SourceCode\CodingChallenge\Cost\bin\x64\Debug\Cost.exe
+C:\SourceCode\CodingChallenge\Cost\bin\x64\Debug\Cost.pdb
+C:\SourceCode\CodingChallenge\Cost\bin\x64\Debug\MWArray.dll
+C:\SourceCode\CodingChallenge\Cost\obj\x64\Debug\Cost.exe
+C:\SourceCode\CodingChallenge\Cost\obj\x64\Debug\Cost.pdb
+C:\SourceCode\CodingChallenge\Cost\obj\x64\Debug\Calculation.csprojResolveAssemblyReference.cache
+C:\SourceCode\CodingChallenge\Cost\bin\x64\Debug\Cost.exe.manifest
+C:\SourceCode\CodingChallenge\Cost\bin\x64\Debug\Cost.application
+C:\SourceCode\CodingChallenge\Cost\obj\x64\Debug\Cost.TrustInfo.xml
+C:\SourceCode\CodingChallenge\Cost\obj\x64\Debug\Cost.exe.manifest
+C:\SourceCode\CodingChallenge\Cost\obj\x64\Debug\Cost.application

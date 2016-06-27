@@ -6,147 +6,146 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
+
 namespace Calculation
 {
     class Program
     {
         static void Main(string[] args)
         {
-        
-
-            
+           
             Console.Title = "Coding Challenge";
             Stopwatch sw = new Stopwatch();
             sw.Start();
             Console.WriteLine("Start:" + sw.Elapsed);
-            List<Resource> resources = new List<Resource>();
-            List<Openning> openings = new List<Openning>();
-            IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
 
-          //  Console.WriteLine("Start Resource Load:" + sw.Elapsed);
-            foreach (var item in LoadXML("xml/resources.xml").AsEnumerable())
-            {
-                Resource res = new Resource();
-                res.EmployeeId = Convert.ToInt32(item["EmployeeID"]);
-                res.DOJ = Convert.ToDateTime(item["DOJ"], culture);
-                res.Skills = PrepareSkillList(item["Skills"].ToString().ToLower());
-                res.DomainExperiance = item["DomainExperience"].ToString().ToLower().Split(',').ToList<string>();
-                res.Rating = item["Rating"].ToString();
-                res.CommunicationRating = item["CommunicationsRating"].ToString();
-                res.NAGP = item["NAGP"].ToString() == "Y" ? true : false;
-                res.YearsOfExperiance = Convert.ToDouble(item["YearsOfExperience"]);
-                res.CurrentRole = item["CurrentRole"].ToString();
-                res.PreviousCustomerExperiance = item["PreviousCustomerExperience"].ToString().Split(',').ToList<string>();
-                res.AvlDate = Convert.ToDateTime(item["AvailableFromDate"], culture);
-                resources.Add(res);
-            }
-            // Console.WriteLine("End Resource Load:" + sw.Elapsed);
-            //Console.WriteLine("Start Opening Load:" + sw.Elapsed);
-            foreach (var item in LoadXML("xml/openings.xml").AsEnumerable())
-            {
-                Openning opnn = new Openning();
-                opnn.RequestId = Convert.ToInt32(item["RequestID"]);
-                opnn.ClientKey = item["ClientKey"].ToString();
-                opnn.ProjectKey = item["ProjectKey"].ToString();
-                opnn.CustomerName = item["CustomerName"].ToString();
-                opnn.ProjectName = item["ProjectName"].ToString();
-                opnn.IsKeyProject = item["IsKeyProject"].ToString() == "Y" ? true : false;
-                opnn.ProjectStartDate = Convert.ToDateTime(item["ProjectStartDate"], culture);
-                opnn.ProjectEndDate = Convert.ToDateTime(item["ProjectEndDate"], culture);
-                opnn.Role = item["Role"].ToString();
-                opnn.IsKeyPosition = item["IsKeyPosition"].ToString() == "Y" ? true : false;
-                opnn.YearsOfExperiance = Convert.ToDouble(item["YearsOfExperience"]);
-                opnn.MandotaroySkilss = item["MandatorySkills"].ToString().ToLower().Split(',').ToList<string>();
-                opnn.ClientCommunication = item["ClientCommunication"].ToString() == "Y" ? true : false;
-                opnn.RequestStartDate = Convert.ToDateTime(item["RequestStartDate"], culture);
-                opnn.AllocationEndDate = Convert.ToDateTime(item["AllocationEndDate"], culture);
-                openings.Add(opnn);
-            }
-            //Console.WriteLine("End Opening Load:" + sw.Elapsed);
-            int[,] costs = new int[resources.Count(), openings.Count()];
-            int[,] newcost = new int[resources.Count(), openings.Count()];
+            var resources = ResourceMapping(); //Load and map resouces from input xml
+            var openings = OpeningMapping();   //Load amd map opening from input xml
+
             int[,] newcostTrue = new int[resources.Count(), openings.Count()];
-            int i = 0, j = 0;
-            Scoring score = new Scoring();
-            //Console.WriteLine("Start Matrix Preparation :" + sw.Elapsed);
-            foreach (var res in resources)
-            {
 
-                foreach (var opnn in openings)
-                {
-                    costs[i, j] = newcostTrue[i,j]= score.CalculatedIndivisualScore(res, opnn); //With Penalty
+            var costs = newcostTrue = CostCalculation(resources, openings, true);
+            var newcost = CostCalculation(resources, openings, false);
 
-                    newcost[i, j] = score.CalculatedIndivisualScore(res, opnn, false); //Without Panelty
-                    j++;
-                }
-
-                i++;
-                j = 0;
-            }
-
-          
-            //Console.WriteLine("End Matrix Preparation:" + sw.Elapsed);
-            //Console.WriteLine("Start Calculation :" + sw.Elapsed);
-            var resourceAssignments = HungarianAlgorithm.FindAssignments(costs);
+            List<Resource> originalResouces = new List<Resource>(resources);
+            List<Openning> originalOpenings = new List<Openning>(openings);
             
-            
-            WriteCSV(resourceAssignments, resources, openings, newcost, newcostTrue, "outputPass1.csv");
+            var rowSol = new int[resources.Count()];
+            var output = LAPJV.FindAssignments(ref rowSol, costs);
 
+            var resourceAssignments = rowSol;
+            WriteCSV(resourceAssignments, originalResouces, originalOpenings, newcost, newcostTrue, "FinalOutput-Paas1.csv");
             //run PASS 2
-            //SecondResourcePool(resourceAssignments, resources, openings, newcost);
+            resourceAssignments = NextResourcePoolAssignment(rowSol, resources, openings, newcost);
+            WriteCSV(resourceAssignments, resources, openings, newcost, newcostTrue, "FinalOutput-Pass2.csv");
 
-            Console.WriteLine("End Calculation :" + sw.Elapsed);
             sw.Stop();
-
-            Console.WriteLine("End");
+            Console.WriteLine("End Calculation :" + sw.Elapsed);
             Console.ReadKey();
         }
 
-
-        private static void SecondResourcePool(int [] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
+        /// <summary>
+        /// Run second PASS to find another resouce for remaning openings
+        /// </summary>
+        /// <param name="resourceAssignments"></param>
+        /// <param name="resources"></param>
+        /// <param name="openings"></param>
+        /// <param name="costs"></param>
+        private static int[] NextResourcePoolAssignment(int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
         {
-     
+
+            var resourcesCopy = resources;
+            var openingsCopy = openings;
+
+            //Calculate remaining resource-opening mapping
+            RemainingOpenings(resourceAssignments,ref resources, ref openings, costs); 
+        
+            var cost = CostCalculation(resources, openings, false);
+
+            var rowSol = new int[resources.Count()];
+            var output = LAPJV.FindAssignments(ref rowSol, cost);
+       
+
+            //for (int i = 0; i < rowSol.Length; i++)
+            //{
+            //    if(rowSol[i] > -1)
+            //    {
+            //        var empId = resources.ElementAt(i).EmployeeId;
+            //        var opnId = openings.ElementAt(rowSol[i]).RequestId;
+            //        var resourceIndex = resourcesCopy.FindIndex(r => r.EmployeeId == empId);
+            //        var openingIndex = openingsCopy.FindIndex(o => o.RequestId == opnId);
+
+            //        resourceAssignments[resourceIndex] = openingIndex;
+            //    }
+            //}
+            
+
+            return rowSol;
+        }
+
+        /// <summary>
+        /// Remaining opening identification and assignments
+        /// </summary>
+        /// <param name="resourceAssignments"></param>
+        /// <param name="resources"></param>
+        /// <param name="openings"></param>
+        /// <param name="costs"></param>
+        private static void RemainingOpenings(int[] resourceAssignments, ref List<Resource> resources, ref List<Openning> openings, int[,] costs)
+        {
+           List<Resource> newResourceCollection = new List<Resource>();
+            List<Openning> newOpenningCollection = new List<Openning>();
+
             int k = 0;
+            int p = 0;
+            int[] removeOpeningIndex = new int[openings.Count()];
             foreach (var resource in resources)
             {
                 if (costs[k, resourceAssignments[k]] < 1000)
                 {
-                    var opn = openings.Find(o => o.RequestId == resourceAssignments[k]);
+                    var opn = openings.ElementAt(resourceAssignments[k]);
 
                     if (opn != null)
                     {
                         resource.AvlDate = opn.AllocationEndDate;
-                        openings.Remove(opn);
+                        removeOpeningIndex[p++] = opn.RequestId;
+                        //openings.Remove(opn);
                     }
                 }
-               
                 k++;
             }
 
-         
-
-            Scoring score = new Scoring();
-            int[,] costs2 = new int[resources.Count(), openings.Count()];
-       
-
-            int i = 0, j = 0;
-            foreach (var res in resources)
+            for (int i = 0; i < p; i++)
             {
-
-                foreach (var opnn in openings)
-                {
-                    costs2[i, j] =  score.CalculatedIndivisualScore(res, opnn); //With Penalty
-                    j++;
-                }
-
-                i++;
-                j = 0;
+                openings.Remove(openings.Find(o => o.RequestId == removeOpeningIndex[i]));
             }
 
-            //var resourceAssignments2 = costs2.FindAssignments();
-            Console.WriteLine("End");
-            //  WriteCSV(resourceAssignments2, resources, openings, costs2, costs2, "outputPass2.csv");
+            var newCost = CostCalculation(resources, openings, false);
 
+
+            //int[] temp = new int[resources.Count()];
+            //int tempVal = 0, inxarr = 0;
+            //for (int m = 0; m < resources.Count(); m++)
+            //{
+            //    for (int n = 0; n < openings.Count(); n++)
+            //    {
+            //        tempVal += newCost[m, n];
+            //    }
+
+            //    temp[inxarr] = tempVal;
+            //    tempVal = 0;
+            //    inxarr++;
+            //}
+
+
+            //for (int h = 0; h < temp.Length; h++)
+            //{
+            //    if (temp[h] < 1000 * openings.Count())
+            //    {
+            //        newResourceCollection.Add(resources.ElementAt(h));
+            //    }
+            //}
+
+            //resources = newResourceCollection;
 
         }
 
@@ -195,20 +194,24 @@ namespace Calculation
 
                 foreach (var assignmentID in resourceAssignments)
                 {
+                    if (assignmentID > -1)
+                    {
                     var rs = res.ElementAt(indx);
                     var op = opn.ElementAt(assignmentID);
-                    sb.AppendLine(string.Join(delimiter, rs.EmployeeId, 
-                                                         String.Join("+", rs.Skills.ToArray()), 
-                                                         rs.AvlDate,
-                                                         String.Join("+", op.MandotaroySkilss.ToArray()), 
-                                                         op.RequestId, 
-                                                         op.ProjectKey,
-                                                         op.ProjectName,
-                                                         op.RequestStartDate,
-                                                         op.AllocationEndDate,
-                                                         assignmentID, 
-                                                         costs[indx, assignmentID],
-                                                         costTrue[indx, assignmentID]));
+                    
+                        sb.AppendLine(string.Join(delimiter, rs.EmployeeId,
+                                                             String.Join("+", rs.Skills.ToArray()),
+                                                             rs.AvlDate,
+                                                             String.Join("+", op.MandotaroySkilss.ToArray()),
+                                                             op.RequestId,
+                                                             op.ProjectKey,
+                                                             op.ProjectName,
+                                                             op.RequestStartDate,
+                                                             op.AllocationEndDate,
+                                                             assignmentID,
+                                                             costs[indx, assignmentID],
+                                                             costTrue[indx, assignmentID]));
+                    }
                     indx++;
                 }
                     
@@ -228,5 +231,99 @@ namespace Calculation
             ds.ReadXml(filePath, XmlReadMode.Auto);
             return ds.Tables[0];
         }
+
+        /// <summary>
+        /// Claculate cost
+        /// </summary>
+        /// <param name="resources"></param>
+        /// <param name="openings"></param>
+        /// <param name="IsPenaltyRequired"></param>
+        /// <returns></returns>
+        private static int[,] CostCalculation(List<Resource> resources, List<Openning> openings,bool IsPenaltyRequired)
+        {
+            int[,] cost = new int[resources.Count(), openings.Count()];
+            int j,i = j = 0;
+            Scoring score = new Scoring();
+
+            foreach (var res in resources)
+            {
+
+                foreach (var opnn in openings)
+                {
+                    cost[i, j] = score.CalculatedIndivisualScore(res, opnn, IsPenaltyRequired); 
+                    j++;
+                }
+
+                i++;
+                j = 0;
+            }
+
+            return cost;
+        }
+
+        /// <summary>
+        /// Load and Map resource from xml
+        /// </summary>
+        /// <returns></returns>
+        private static List<Resource> ResourceMapping()
+        {
+            List<Resource> resources = new List<Resource>();
+            IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
+
+            //  Console.WriteLine("Start Resource Load:" + sw.Elapsed);
+            foreach (var item in LoadXML("xml/resources.xml").AsEnumerable())
+            {
+                Resource res = new Resource();
+                res.EmployeeId = Convert.ToInt32(item["EmployeeID"]);
+                res.DOJ = Convert.ToDateTime(item["DOJ"], culture);
+                res.Skills = PrepareSkillList(item["Skills"].ToString().ToLower());
+                res.DomainExperiance = item["DomainExperience"].ToString().ToLower().Split(',').ToList<string>();
+                res.Rating = item["Rating"].ToString();
+                res.CommunicationRating = item["CommunicationsRating"].ToString();
+                res.NAGP = item["NAGP"].ToString() == "Y" ? true : false;
+                res.YearsOfExperiance = Convert.ToDouble(item["YearsOfExperience"]);
+                res.CurrentRole = item["CurrentRole"].ToString();
+                res.PreviousCustomerExperiance = item["PreviousCustomerExperience"].ToString().Split(',').ToList<string>();
+                res.AvlDate = Convert.ToDateTime(item["AvailableFromDate"], culture);
+                resources.Add(res);
+            }
+
+            return resources;
+        }
+
+        /// <summary>
+        /// Load and Map opening from xml
+        /// </summary>
+        /// <returns></returns>
+        private static List<Openning> OpeningMapping()
+        {
+            List<Openning> openings = new List<Openning>();
+            IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
+
+            foreach (var item in LoadXML("xml/openings.xml").AsEnumerable())
+            {
+                Openning opnn = new Openning();
+                opnn.RequestId = Convert.ToInt32(item["RequestID"]);
+                opnn.ClientKey = item["ClientKey"].ToString();
+                opnn.ProjectKey = item["ProjectKey"].ToString();
+                opnn.CustomerName = item["CustomerName"].ToString();
+                opnn.ProjectName = item["ProjectName"].ToString();
+                opnn.IsKeyProject = item["IsKeyProject"].ToString() == "Y" ? true : false;
+                opnn.ProjectStartDate = Convert.ToDateTime(item["ProjectStartDate"], culture);
+                opnn.ProjectEndDate = Convert.ToDateTime(item["ProjectEndDate"], culture);
+                opnn.Role = item["Role"].ToString();
+                opnn.IsKeyPosition = item["IsKeyPosition"].ToString() == "Y" ? true : false;
+                opnn.YearsOfExperiance = Convert.ToDouble(item["YearsOfExperience"]);
+                opnn.MandotaroySkilss = item["MandatorySkills"].ToString().ToLower().Split(',').ToList<string>();
+                opnn.ClientCommunication = item["ClientCommunication"].ToString() == "Y" ? true : false;
+                opnn.RequestStartDate = Convert.ToDateTime(item["RequestStartDate"], culture);
+                opnn.AllocationEndDate = Convert.ToDateTime(item["AllocationEndDate"], culture);
+                openings.Add(opnn);
+            }
+
+            return openings;
+        }
     }
+
+    
 }

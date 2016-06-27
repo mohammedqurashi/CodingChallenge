@@ -1,0 +1,11 @@
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\Cost.exe.config
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\Cost.exe
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\Cost.pdb
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\lpjv_new.dll
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\lpjv_newNative.dll
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\MWArray.dll
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\lpjv_new.xml
+C:\SourceCode\CodingChallenge\Cost\bin\x86\Release\lpjv_newNative.xml
+C:\SourceCode\CodingChallenge\Cost\obj\x86\Release\Calculation.csprojResolveAssemblyReference.cache
+C:\SourceCode\CodingChallenge\Cost\obj\x86\Release\Cost.exe
+C:\SourceCode\CodingChallenge\Cost\obj\x86\Release\Cost.pdb
