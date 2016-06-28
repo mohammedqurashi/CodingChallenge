@@ -94,10 +94,10 @@ namespace Calculation
             {
                 for (int col = 0; col < dim; col++)
                 {
-                    if (row > rDim-1 || col > cDim-1)
+                    if (row > rDim - 1 || col > cDim - 1)
                         assigncost[row, col] = 1000;
                     else
-                        assigncost[row, col] = cost[row, col];
+                        assigncost[row, col] = cost[row, col]; //471,18
                 }
             }
 
@@ -371,17 +371,19 @@ namespace Calculation
                 lapcost = lapcost + assigncost[i, j];
             }
 
-            for (int r = 0; r < rowsol.Length; r++)
+            for (int r = 0; r < rowsol.Length ; r++)
             {
-                if(r < rDim)
+                if (r < rDim)
                 {
                     assignments[r] = rowsol[r];
-                }
 
-                if(assignments[r] >= cDim)
-                {
-                    assignments[r] = -1;
+                    if (assignments[r] >= cDim)
+                    {
+                        assignments[r] = -1;
+                    }
                 }
+                else
+                    break;
             }
 
             // free reserved memory.

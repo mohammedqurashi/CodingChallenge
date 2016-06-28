@@ -31,8 +31,8 @@ namespace Calculation
 
                     if(IsWithPanelty)
                     {
-                        TimeSpan ts = opn.AllocationEndDate - DateTime.Now;
-                        score = Math.Max(0, score - ((ts.Days)/36) * 0.01); // panelty factor assume 0.2
+                         TimeSpan ts = opn.AllocationEndDate - opn.RequestStartDate;
+                        score = Math.Max(0, score - ((ts.Days)/36) * 0.02); // panelty factor assume 0.2
                     }
 
                 }

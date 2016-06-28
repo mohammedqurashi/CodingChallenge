@@ -16,11 +16,10 @@ namespace Calculation
            
             Console.Title = "Coding Challenge";
             Stopwatch sw = new Stopwatch();
-            sw.Start();
-            Console.WriteLine("Start:" + sw.Elapsed);
+            sw.Start(); Console.WriteLine("Start:" + sw.Elapsed);
 
-            var resources = ResourceMapping(); //Load and map resouces from input xml
-            var openings = OpeningMapping();   //Load amd map opening from input xml
+            var resources = ResourceMapping(); //Load and map resouces from resource input xml
+            var openings = OpeningMapping();   //Load amd map opening from opening input xml
 
             int[,] newcostTrue = new int[resources.Count(), openings.Count()];
 
@@ -30,18 +29,18 @@ namespace Calculation
             List<Resource> originalResouces = new List<Resource>(resources);
             List<Openning> originalOpenings = new List<Openning>(openings);
             
+            //PASS 1 Run
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, costs);
-
             var resourceAssignments = rowSol;
             WriteCSV(resourceAssignments, originalResouces, originalOpenings, newcost, newcostTrue, "FinalOutput-Paas1.csv");
-            //run PASS 2
-            resourceAssignments = NextResourcePoolAssignment(rowSol, resources, openings, newcost);
-            WriteCSV(resourceAssignments, resources, openings, newcost, newcostTrue, "FinalOutput-Pass2.csv");
 
-            sw.Stop();
-            Console.WriteLine("End Calculation :" + sw.Elapsed);
-            Console.ReadKey();
+            //PASS 2 Run
+            resourceAssignments = NextResourcePoolAssignment(rowSol, resources, openings, newcost);
+            var costPass2 = CostCalculation(resources, openings, true); 
+            WriteCSV(resourceAssignments, resources, openings, costPass2, costPass2, "FinalOutput-Pass2.csv");
+
+            sw.Stop(); Console.WriteLine("End Calculation :" + sw.Elapsed); Console.ReadKey();
         }
 
         /// <summary>
@@ -58,17 +57,17 @@ namespace Calculation
             var openingsCopy = openings;
 
             //Calculate remaining resource-opening mapping
-            RemainingOpenings(resourceAssignments,ref resources, ref openings, costs); 
-        
+            RemainingOpenings(resourceAssignments,ref resources, ref openings, costs);
+
             var cost = CostCalculation(resources, openings, false);
 
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, cost);
-       
+
 
             //for (int i = 0; i < rowSol.Length; i++)
             //{
-            //    if(rowSol[i] > -1)
+            //    if (rowSol[i] > -1)
             //    {
             //        var empId = resources.ElementAt(i).EmployeeId;
             //        var opnId = openings.ElementAt(rowSol[i]).RequestId;
@@ -78,8 +77,8 @@ namespace Calculation
             //        resourceAssignments[resourceIndex] = openingIndex;
             //    }
             //}
-            
 
+            //return resourceAssignments;
             return rowSol;
         }
 
@@ -92,11 +91,9 @@ namespace Calculation
         /// <param name="costs"></param>
         private static void RemainingOpenings(int[] resourceAssignments, ref List<Resource> resources, ref List<Openning> openings, int[,] costs)
         {
-           List<Resource> newResourceCollection = new List<Resource>();
-            List<Openning> newOpenningCollection = new List<Openning>();
-
-            int k = 0;
-            int p = 0;
+            List<Resource> newResourceCollection = new List<Resource>();
+          
+            int k = 0,p = 0;
             int[] removeOpeningIndex = new int[openings.Count()];
             foreach (var resource in resources)
             {
@@ -108,7 +105,6 @@ namespace Calculation
                     {
                         resource.AvlDate = opn.AllocationEndDate;
                         removeOpeningIndex[p++] = opn.RequestId;
-                        //openings.Remove(opn);
                     }
                 }
                 k++;
@@ -119,11 +115,9 @@ namespace Calculation
                 openings.Remove(openings.Find(o => o.RequestId == removeOpeningIndex[i]));
             }
 
-            var newCost = CostCalculation(resources, openings, false);
-
-
+            //var newCost = CostCalculation(resources, openings, false);
             //int[] temp = new int[resources.Count()];
-            //int tempVal = 0, inxarr = 0;
+            //int tempVal = 0, indxarr = 0;
             //for (int m = 0; m < resources.Count(); m++)
             //{
             //    for (int n = 0; n < openings.Count(); n++)
@@ -131,9 +125,8 @@ namespace Calculation
             //        tempVal += newCost[m, n];
             //    }
 
-            //    temp[inxarr] = tempVal;
+            //    temp[indxarr++] = tempVal;
             //    tempVal = 0;
-            //    inxarr++;
             //}
 
 
@@ -150,32 +143,32 @@ namespace Calculation
         }
 
         /// <summary>
-        /// Prepare skill list
+        /// Claculate cost
         /// </summary>
-        /// <param name="skill"></param>
+        /// <param name="resources"></param>
+        /// <param name="openings"></param>
+        /// <param name="IsPenaltyRequired"></param>
         /// <returns></returns>
-        private static List<string> PrepareSkillList(string skill) {
-            var skillList = skill.Split(',');
-            var mainTech = "";
-            foreach (var item in skillList)
+        private static int[,] CostCalculation(List<Resource> resources, List<Openning> openings, bool IsPenaltyRequired)
+        {
+            int[,] cost = new int[resources.Count(), openings.Count()];
+            int j, i = j = 0;
+            Scoring score = new Scoring();
+
+            foreach (var res in resources)
             {
-                if (item.Contains("expert"))
+
+                foreach (var opnn in openings)
                 {
-                    Array.Resize(ref skillList, skillList.Length + 2);
-                    mainTech = item.Substring(0, item.IndexOf('-'));
-                    skillList[skillList.Length - 2] = mainTech + "-intermediate";
-                    skillList[skillList.Length -1] = mainTech + "-beginner";
+                    cost[i, j] = score.CalculatedIndivisualScore(res, opnn, IsPenaltyRequired);
+                    j++;
                 }
-                else if (item.Contains("intermediate"))
-                {
-                    Array.Resize(ref skillList, skillList.Length + 1);
-                    mainTech = item.Substring(0, item.IndexOf('-'));
-                    skillList[skillList.Length - 1] = mainTech + "-beginner";
-                }
-                mainTech = "";
+
+                i++;
+                j = 0;
             }
 
-            return skillList.ToList<string>();
+            return cost;
         }
 
         /// <summary>
@@ -196,8 +189,8 @@ namespace Calculation
                 {
                     if (assignmentID > -1)
                     {
-                    var rs = res.ElementAt(indx);
-                    var op = opn.ElementAt(assignmentID);
+                        var rs = res.ElementAt(indx);
+                        var op = opn.ElementAt(assignmentID);
                     
                         sb.AppendLine(string.Join(delimiter, rs.EmployeeId,
                                                              String.Join("+", rs.Skills.ToArray()),
@@ -212,6 +205,7 @@ namespace Calculation
                                                              costs[indx, assignmentID],
                                                              costTrue[indx, assignmentID]));
                     }
+
                     indx++;
                 }
                     
@@ -230,35 +224,6 @@ namespace Calculation
             DataSet ds = new DataSet();
             ds.ReadXml(filePath, XmlReadMode.Auto);
             return ds.Tables[0];
-        }
-
-        /// <summary>
-        /// Claculate cost
-        /// </summary>
-        /// <param name="resources"></param>
-        /// <param name="openings"></param>
-        /// <param name="IsPenaltyRequired"></param>
-        /// <returns></returns>
-        private static int[,] CostCalculation(List<Resource> resources, List<Openning> openings,bool IsPenaltyRequired)
-        {
-            int[,] cost = new int[resources.Count(), openings.Count()];
-            int j,i = j = 0;
-            Scoring score = new Scoring();
-
-            foreach (var res in resources)
-            {
-
-                foreach (var opnn in openings)
-                {
-                    cost[i, j] = score.CalculatedIndivisualScore(res, opnn, IsPenaltyRequired); 
-                    j++;
-                }
-
-                i++;
-                j = 0;
-            }
-
-            return cost;
         }
 
         /// <summary>
@@ -323,7 +288,38 @@ namespace Calculation
 
             return openings;
         }
+
+        /// <summary>
+        /// Prepare skill list
+        /// </summary>
+        /// <param name="skill"></param>
+        /// <returns></returns>
+        private static List<string> PrepareSkillList(string skill)
+        {
+            var skillList = skill.Split(',');
+            var mainTech = "";
+            foreach (var item in skillList)
+            {
+                if (item.Contains("expert"))
+                {
+                    Array.Resize(ref skillList, skillList.Length + 2);
+                    mainTech = item.Substring(0, item.IndexOf('-'));
+                    skillList[skillList.Length - 2] = mainTech + "-intermediate";
+                    skillList[skillList.Length - 1] = mainTech + "-beginner";
+                }
+                else if (item.Contains("intermediate"))
+                {
+                    Array.Resize(ref skillList, skillList.Length + 1);
+                    mainTech = item.Substring(0, item.IndexOf('-'));
+                    skillList[skillList.Length - 1] = mainTech + "-beginner";
+                }
+                mainTech = "";
+            }
+
+            return skillList.ToList<string>();
+        }
+
     }
 
-    
+
 }
