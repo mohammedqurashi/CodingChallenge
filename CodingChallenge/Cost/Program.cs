@@ -11,6 +11,10 @@ namespace Calculation
 {
     class Program
     {
+        //global variables
+        private static char[] charSeparators = new char[] { ',' };
+        private static IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
+
         static void Main(string[] args)
         {
            
@@ -32,12 +36,12 @@ namespace Calculation
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, costs);
             var resourceAssignments = rowSol;
-            WriteCSV(resourceAssignments, originalResouces, originalOpenings, newcost, costs, "FinalOutput-Paas1.csv");
+            WriteCSV(resourceAssignments, originalResouces, originalOpenings, newcost, costs, "FinalOutput-Paas1-"+ DateTime.Now.ToString("ddMMyyyhhmmss") +".csv");
 
             //PASS 2 Run
             resourceAssignments = NextResourcePoolAssignment(rowSol, resources, openings, newcost);
             var costPass2 = CostCalculation(resources, openings, true); 
-            WriteCSV(resourceAssignments, resources, openings, costPass2, costPass2, "FinalOutput-Pass2.csv");
+            WriteCSV(resourceAssignments, resources, openings, costPass2, costPass2, "FinalOutput-Pass2-"+ DateTime.Now.ToString("ddMMyyyhhmmss") +".csv");
 
             sw.Stop(); Console.WriteLine("End Calculation :" + sw.Elapsed); Console.ReadKey();
         }
@@ -49,6 +53,7 @@ namespace Calculation
         /// <param name="resources"></param>
         /// <param name="openings"></param>
         /// <param name="costs"></param>
+        /// <returns>assignment list</returns>
         private static int[] NextResourcePoolAssignment(int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
         {
 
@@ -100,7 +105,7 @@ namespace Calculation
 
                     if (opn != null)
                     {
-                        resource.AvlDate = opn.AllocationEndDate;
+                        resource.AvlDate = opn.AllocationEndDate.AddDays(1);
                         removeOpeningIndex[p++] = opn.RequestId;
                     }
                 }
@@ -122,7 +127,7 @@ namespace Calculation
         /// <param name="resources"></param>
         /// <param name="openings"></param>
         /// <param name="IsPenaltyRequired"></param>
-        /// <returns></returns>
+        /// <returns>cost materics</returns>
         private static int[,] CostCalculation(List<Resource> resources, List<Openning> openings, bool IsPenaltyRequired)
         {
             int[,] cost = new int[resources.Count(), openings.Count()];
@@ -161,31 +166,38 @@ namespace Calculation
             int indx = 0;
             StringBuilder sb = new StringBuilder();
 
+            //header to csv
+            sb.AppendLine("EmployeeId,RequestId,Skills,MandotaroySkilss,AvlDate,RequestStartDate,AllocationEndDate,PreviousCustomerExperiance,CustomerName,DomainExperiance,ProjectDomain,ProjectKey,NAGP,Rating,IsKeyProject,IsKeyPosition,cost1,cost2,score");
+
                 foreach (var assignmentID in resourceAssignments)
                 {
                     if (assignmentID > -1)
                     {
-                        var rs = res.ElementAt(indx++);
+                        var rs = res.ElementAt(indx);
                         var op = opn.ElementAt(assignmentID);
-                    
+                        double score = (1000 - costs[indx, assignmentID]) *0.01;
                         sb.AppendLine(string.Join(delimiter, rs.EmployeeId,
-                                                             String.Join("+", rs.Skills.ToArray()),
-                                                             rs.AvlDate,
-                                                             String.Join("+", rs.PreviousCustomerExperiance.ToArray()),
-                                                             String.Join("+", op.MandotaroySkilss.ToArray()),
-                                                             String.Join("+", rs.DomainExperiance.ToArray()),
-                                                             String.Join("+", op.ProjectDomain.ToArray()),
-                                                             op.CustomerName,
                                                              op.RequestId,
-                                                             op.ProjectKey,
-                                                             op.ProjectName,
+                                                             String.Join("+", rs.Skills.ToArray()),
+                                                             op.MandotaroySkilss.Count() > 0 ? String.Join("+", op.MandotaroySkilss.ToArray()) : "",
+                                                             rs.AvlDate,
                                                              op.RequestStartDate,
                                                              op.AllocationEndDate,
-                                                             assignmentID,
+                                                             rs.PreviousCustomerExperiance.Count() > 0 ? String.Join("+", rs.PreviousCustomerExperiance.ToArray()) : "" ,
+                                                             op.CustomerName,
+                                                             rs.DomainExperiance.Count() > 0 ? String.Join("+", rs.DomainExperiance.ToArray()) : "",
+                                                             op.ProjectDomain.Count() > 0 ? String.Join("+", op.ProjectDomain.ToArray()): "",
+                                                             op.ProjectKey,
+                                                             rs.NAGP,
+                                                             rs.Rating,
+                                                             op.IsKeyProject,
+                                                             op.IsKeyPosition,
                                                              costs[indx, assignmentID],
-                                                             costTrue[indx, assignmentID]));
+                                                             costTrue[indx, assignmentID],
+                                                             score));
                     }
 
+                    indx++;
                 }
                     
            
@@ -197,7 +209,7 @@ namespace Calculation
         /// Load data from xml to datatable
         /// </summary>
         /// <param name="filePath"></param>
-        /// <returns></returns>
+        /// <returns>data table</returns>
         private static DataTable LoadXML(string filePath)
         {
             DataSet ds = new DataSet();
@@ -208,27 +220,26 @@ namespace Calculation
         /// <summary>
         /// Load and Map resource from xml
         /// </summary>
-        /// <returns></returns>
+        /// <returns>list of resources</returns>
         private static List<Resource> ResourceMapping()
         {
             List<Resource> resources = new List<Resource>();
-            IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
 
-            //  Console.WriteLine("Start Resource Load:" + sw.Elapsed);
+            //  Loading resource
             foreach (var item in LoadXML("xml/resources.xml").AsEnumerable())
             {
                 Resource res = new Resource();
-                res.EmployeeId = Convert.ToInt32(item["EmployeeID"]);
-                res.DOJ = Convert.ToDateTime(item["DOJ"], culture);
-                res.Skills = PrepareSkillList(item["Skills"].ToString().ToLower());
-                res.DomainExperiance = item["DomainExperience"].ToString().ToLower().Split(',').ToList<string>();
-                res.Rating = item["Rating"].ToString();
-                res.CommunicationRating = item["CommunicationsRating"].ToString();
-                res.NAGP = item["NAGP"].ToString() == "Y" ? true : false;
-                res.YearsOfExperiance = Convert.ToDouble(item["YearsOfExperience"]);
-                res.CurrentRole = item["CurrentRole"].ToString();
-                res.PreviousCustomerExperiance = item["PreviousCustomerExperience"].ToString().Split(',').ToList<string>();
-                res.AvlDate = Convert.ToDateTime(item["AvailableFromDate"], culture);
+                res.EmployeeId                 = Convert.ToInt32(item["EmployeeID"]);
+                res.DOJ                        = Convert.ToDateTime(item["DOJ"], culture);
+                res.Skills                     = PrepareSkillList(Convert.ToString(item["Skills"]).ToLower().Trim());
+                res.DomainExperiance           = Convert.ToString(item["DomainExperience"]).ToLower().Split(charSeparators,StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
+                res.Rating                     = Convert.ToString(item["Rating"]).ToLower();
+                res.CommunicationRating        = Convert.ToString(item["CommunicationsRating"]).ToLower();
+                res.NAGP                       = Convert.ToString(item["NAGP"]).ToLower() == "y" ? true : false;
+                res.YearsOfExperiance          = Convert.ToDouble(item["YearsOfExperience"]);
+                res.CurrentRole                = Convert.ToString(item["CurrentRole"]).ToLower();
+                res.PreviousCustomerExperiance = Convert.ToString(item["PreviousCustomerExperience"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
+                res.AvlDate                    = Convert.ToDateTime(item["AvailableFromDate"], culture);
                 resources.Add(res);
             }
 
@@ -238,30 +249,31 @@ namespace Calculation
         /// <summary>
         /// Load and Map opening from xml
         /// </summary>
-        /// <returns></returns>
+        /// <returns>list of openings</returns>
         private static List<Openning> OpeningMapping()
         {
             List<Openning> openings = new List<Openning>();
-            IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
-
+            
+            //Loading openings
             foreach (var item in LoadXML("xml/openings.xml").AsEnumerable())
             {
                 Openning opnn = new Openning();
-                opnn.RequestId = Convert.ToInt32(item["RequestID"]);
-                opnn.ClientKey = item["ClientKey"].ToString();
-                opnn.ProjectKey = item["ProjectKey"].ToString();
-                opnn.CustomerName = item["CustomerName"].ToString();
-                opnn.ProjectName = item["ProjectName"].ToString();
-                opnn.IsKeyProject = item["IsKeyProject"].ToString() == "Y" ? true : false;
-                opnn.ProjectStartDate = Convert.ToDateTime(item["ProjectStartDate"], culture);
-                opnn.ProjectEndDate = Convert.ToDateTime(item["ProjectEndDate"], culture);
-                opnn.Role = item["Role"].ToString();
-                opnn.IsKeyPosition = item["IsKeyPosition"].ToString() == "Y" ? true : false;
-                opnn.YearsOfExperiance = Convert.ToDouble(item["YearsOfExperience"]);
-                opnn.MandotaroySkilss = item["MandatorySkills"].ToString().ToLower().Split(',').ToList<string>();
-                opnn.ClientCommunication = item["ClientCommunication"].ToString() == "Y" ? true : false;
-                opnn.RequestStartDate = Convert.ToDateTime(item["RequestStartDate"], culture);
-                opnn.AllocationEndDate = Convert.ToDateTime(item["AllocationEndDate"], culture);
+                opnn.RequestId           = Convert.ToInt32(item["RequestID"]);
+                opnn.ClientKey           = Convert.ToString(item["ClientKey"]).ToLower();
+                opnn.ProjectKey          = Convert.ToString(item["ProjectKey"]).ToLower();
+                opnn.CustomerName        = Convert.ToString(item["CustomerName"]).ToLower();
+                opnn.ProjectName         = Convert.ToString(item["ProjectName"]).ToLower();
+                opnn.ProjectDomain       = Convert.ToString(item["ProjectDomain"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
+                opnn.IsKeyProject        = Convert.ToString(item["IsKeyProject"]).ToLower() == "y" ? true : false;
+                opnn.ProjectStartDate    = Convert.ToDateTime(item["ProjectStartDate"], culture);
+                opnn.ProjectEndDate      = Convert.ToDateTime(item["ProjectEndDate"], culture);
+                opnn.Role                = Convert.ToString(item["Role"]).ToLower();
+                opnn.IsKeyPosition       = Convert.ToString(item["IsKeyPosition"]).ToLower() == "y" ? true : false;
+                opnn.YearsOfExperiance   = Convert.ToDouble(item["YearsOfExperience"]);
+                opnn.MandotaroySkilss    = Convert.ToString(item["MandatorySkills"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
+                opnn.ClientCommunication = Convert.ToString(item["ClientCommunication"]).ToLower() == "y" ? true : false;
+                opnn.RequestStartDate    = Convert.ToDateTime(item["RequestStartDate"], culture);
+                opnn.AllocationEndDate   = Convert.ToDateTime(item["AllocationEndDate"], culture);
                 openings.Add(opnn);
             }
 
@@ -272,24 +284,24 @@ namespace Calculation
         /// Prepare skill list
         /// </summary>
         /// <param name="skill"></param>
-        /// <returns></returns>
+        /// <returns>list of skills</returns>
         private static List<string> PrepareSkillList(string skill)
         {
-            var skillList = skill.Split(',');
+            var skillList = skill.ToLower().Split(',');
             var mainTech = "";
             foreach (var item in skillList)
             {
                 if (item.Contains("expert"))
                 {
                     Array.Resize(ref skillList, skillList.Length + 2);
-                    mainTech = item.Substring(0, item.IndexOf('-'));
+                    mainTech = item.Substring(0, item.IndexOf('-')).ToLower();
                     skillList[skillList.Length - 2] = mainTech + "-intermediate";
                     skillList[skillList.Length - 1] = mainTech + "-beginner";
                 }
                 else if (item.Contains("intermediate"))
                 {
                     Array.Resize(ref skillList, skillList.Length + 1);
-                    mainTech = item.Substring(0, item.IndexOf('-'));
+                    mainTech = item.Substring(0, item.IndexOf('-')).ToLower();
                     skillList[skillList.Length - 1] = mainTech + "-beginner";
                 }
                 mainTech = "";
