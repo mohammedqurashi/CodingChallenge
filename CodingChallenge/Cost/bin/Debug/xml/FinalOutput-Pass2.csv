@@ -1,80 +1,80 @@
-457,java-expert','java-intermediate','java-beginner,12/1/2016 12:00:00 AM,android-expert,7,ONB,Online banking,5/1/2016 12:00:00 AM,1/1/2017 12:00:00 AM,0,1000,1000
-759,java-expert','java-intermediate','java-beginner,3/3/2017 12:00:00 AM,ios-intermediate,38,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,3,1000,1000
-592,java-expert','java-intermediate','java-beginner,12/1/2017 12:00:00 AM,ios-intermediate,39,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,4,1000,1000
-561,java-expert','java-intermediate','java-beginner,6/1/2017 12:00:00 AM,java-intermediate',' mongodb-intermediate,92,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,5,1000,1000
-150,java-expert','java-intermediate','java-beginner,6/1/2017 12:00:00 AM,java-intermediate',' mongodb-intermediate,93,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,6,1000,1000
-634,java-expert','java-intermediate','java-beginner,6/1/2017 12:00:00 AM,java-intermediate',' mongodb-intermediate,94,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,7,1000,1000
-531,java-expert','java-intermediate','java-beginner,6/1/2017 12:00:00 AM,java-intermediate',' mongodb-intermediate,95,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,8,1000,1000
-424,java-expert','java-intermediate','java-beginner,12/1/2017 12:00:00 AM,android-intermediate,98,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,9,1000,1000
-812,java-expert','java-intermediate','java-beginner,2/1/2017 12:00:00 AM,android-intermediate,99,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,10,1000,1000
-202,java-expert','java-intermediate','java-beginner,10/1/2016 12:00:00 AM,.net-expert',' azure-expert,102,INF,Informatics,7/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,11,1000,1000
-155,java-expert','java-intermediate','java-beginner,2/1/2017 12:00:00 AM,ios-intermediate,277,RMC,RMC,6/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,12,1000,1000
-715,java-expert','java-intermediate','java-beginner,4/1/2018 12:00:00 AM,java-expert',' mongodb-expert,677,SNE,S98,7/15/2016 12:00:00 AM,8/31/2016 12:00:00 AM,13,1000,1000
-229,java-expert','java-intermediate','java-beginner,12/31/2016 12:00:00 AM,java-expert',' mongodb-expert,678,SNE,S98,7/15/2016 12:00:00 AM,8/31/2016 12:00:00 AM,14,1000,1000
-153,java-expert','java-intermediate','java-beginner,12/31/2016 12:00:00 AM,.net-expert',' azure-expert,154,MFR,Multi-facility reporting,7/10/2016 12:00:00 AM,2/10/2018 12:00:00 AM,16,1000,1000
-255,java-expert','java-intermediate','java-beginner,3/31/2017 12:00:00 AM,android-intermediate,276,RMC,RMC,6/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,17,1000,1000
-710,java-expert','java-intermediate','java-beginner,2/1/2017 12:00:00 AM,.net-expert',' wpf-expert,152,MFR,Multi-facility reporting,7/10/2016 12:00:00 AM,2/10/2018 12:00:00 AM,28,1000,1000
-454,java-expert','java-intermediate','java-beginner,2/1/2017 12:00:00 AM,.net-intermediate',' sharepoint-beginner,427,CDM,Customer document management,6/15/2016 12:00:00 AM,9/30/2016 12:00:00 AM,30,1000,1000
-152,java-expert','java-intermediate','java-beginner,3/3/2017 12:00:00 AM,.net-beginner',' wpf-beginner,477,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,32,1000,1000
-834,java-expert','java-intermediate','java-beginner,3/3/2017 12:00:00 AM,.net-beginner',' wpf-beginner,478,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,33,1000,1000
-445,java-expert','java-intermediate','java-beginner,8/1/2016 12:00:00 AM,.net-beginner',' wpf-beginner,479,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,34,1000,1000
-506,java-expert','java-intermediate','java-beginner,12/1/2017 12:00:00 AM,.net-beginner',' wpf-beginner,480,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,35,1000,1000
-760,java-expert','java-intermediate','java-beginner,3/3/2017 12:00:00 AM,.net-beginner',' wpf-beginner,481,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,36,1000,1000
-258,java-expert','java-intermediate','java-beginner,3/3/2017 12:00:00 AM,.net-beginner',' wpf-beginner,598,MFR,Multi-facility reporting,1/1/2016 12:00:00 AM,2/10/2018 12:00:00 AM,37,1000,1000
-783,java-expert','java-intermediate','java-beginner,2/1/2017 12:00:00 AM,.net-beginner',' wpf-beginner,599,MFR,Multi-facility reporting,1/1/2016 12:00:00 AM,2/10/2018 12:00:00 AM,38,1000,1000
-242,java-expert','java-intermediate','java-beginner,12/1/2017 12:00:00 AM,.net-expert',' sql server-expert,831,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,39,1000,1000
-142,java-expert','java-intermediate','java-beginner,6/1/2017 12:00:00 AM,.net-expert',' sql server-expert,832,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,40,1000,1000
-233,java-expert','java-intermediate','java-beginner,6/1/2017 12:00:00 AM,java-intermediate',' mongodb-intermediate,684,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,41,1000,1000
-803,java-expert','java-intermediate','java-beginner,12/1/2017 12:00:00 AM,java-beginner',' mongodb-beginner,689,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,42,1000,1000
-825,java-expert','java-intermediate','java-beginner,12/1/2017 12:00:00 AM,java-beginner',' mongodb-beginner,691,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,43,1000,1000
-1133,java-intermediate','java-beginner,12/1/2017 12:00:00 AM,java-beginner',' mongodb-beginner,694,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,44,1000,1000
-2001,java-intermediate','java-beginner,2/1/2017 12:00:00 AM,java-beginner',' mongodb-beginner,696,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,45,1000,1000
-1970,java-intermediate','java-beginner,12/1/2017 12:00:00 AM,java-intermediate',' mongodb-intermediate,698,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,46,1000,1000
-1156,java-intermediate','java-beginner,12/1/2017 12:00:00 AM,java-expert',' mongodb-expert,781,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,55,1000,1000
-1881,java-intermediate','java-beginner,3/3/2017 12:00:00 AM,java-expert',' mongodb-expert,782,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,56,1000,1000
-1669,java-intermediate',' mongodb-intermediate','java-beginner',' mongodb-beginner,9/30/2016 12:00:00 AM,java-beginner',' mongodb-beginner,720,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,78,910,910
-1628,java-intermediate',' mongodb-intermediate','java-beginner',' mongodb-beginner,9/30/2016 12:00:00 AM,java-intermediate',' mongodb-intermediate,708,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,47,910,910
-744,.net-intermediate',' wpf-intermediate','.net-beginner',' wpf-beginner,7/15/2016 12:00:00 AM,.net-beginner',' wpf-beginner,846,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,65,948,948
-1114,.net-intermediate',' wpf-intermediate','.net-beginner',' wpf-beginner,7/15/2016 12:00:00 AM,.net-intermediate',' wpf-intermediate,773,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,52,948,948
-1607,android-intermediate','android-beginner,9/30/2016 12:00:00 AM,android-intermediate,119,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,15,876,876
-3300,.net-beginner',' sharepoint-beginner,9/30/2016 12:00:00 AM,.net-beginner',' sharepoint-beginner,322,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,21,903,903
-450,.net-beginner',' sharepoint-beginner,12/1/2016 12:00:00 AM,.net-beginner',' sharepoint-beginner,319,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,18,883,883
-2483,.net-beginner',' sharepoint-beginner,12/1/2016 12:00:00 AM,.net-beginner',' sharepoint-beginner,320,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,19,883,883
-3883,.net-beginner',' sharepoint-beginner,9/30/2016 12:00:00 AM,.net-beginner',' sharepoint-beginner,324,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,23,878,878
-3570,.net-beginner',' sharepoint-beginner,9/30/2016 12:00:00 AM,.net-beginner',' sharepoint-beginner,323,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,22,913,913
-576,.net-expert',' sharepoint-expert','.net-intermediate','.net-beginner',' sharepoint-intermediate',' sharepoint-beginner,7/15/2016 12:00:00 AM,.net-expert',' sharepoint-expert,770,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,51,898,898
-730,.net-expert',' sharepoint-expert','.net-intermediate','.net-beginner',' sharepoint-intermediate',' sharepoint-beginner,9/30/2016 12:00:00 AM,.net-intermediate',' sharepoint-intermediate,330,WMS,WMS,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,79,893,893
-469,.net-expert',' sharepoint-expert','.net-intermediate','.net-beginner',' sharepoint-intermediate',' sharepoint-beginner,9/30/2016 12:00:00 AM,.net-intermediate',' sharepoint-intermediate,327,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,74,903,903
-790,.net-expert',' wpf-expert','.net-intermediate','.net-beginner',' wpf-intermediate',' wpf-beginner,7/15/2016 12:00:00 AM,.net-expert',' wpf-expert,864,AUT,Automation,9/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,73,854,854
-1801,.net-intermediate',' sharepoint-intermediate','.net-beginner',' sharepoint-beginner,4/1/2017 12:00:00 AM,.net-intermediate',' sharepoint-intermediate,329,WMS,WMS,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,75,903,903
-3689,.net-beginner',' sharepoint-beginner,12/1/2016 12:00:00 AM,.net-beginner',' sharepoint-beginner,321,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,20,898,898
-2569,.net-beginner',' sharepoint-beginner,1/1/2018 12:00:00 AM,.net-intermediate',' sharepoint-intermediate,771,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,24,1000,1000
-2899,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' sharepoint-intermediate,774,EPF,EFPR,8/1/2016 12:00:00 AM,12/31/2016 12:00:00 AM,25,1000,1000
-2639,.net-beginner',' sharepoint-beginner,12/1/2016 12:00:00 AM,.net-intermediate',' sharepoint-intermediate,777,EPF,EFPR,8/1/2016 12:00:00 AM,12/31/2016 12:00:00 AM,26,1000,1000
-2847,.net-beginner',' sharepoint-beginner,4/1/2017 12:00:00 AM,.net-intermediate',' sharepoint-intermediate,780,EPF,EFPR,8/1/2016 12:00:00 AM,12/31/2016 12:00:00 AM,27,1000,1000
-3192,.net-beginner',' sharepoint-beginner,4/1/2017 12:00:00 AM,.net-intermediate',' sharepoint-beginner,833,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,31,1000,1000
-3978,.net-beginner',' sharepoint-beginner,1/1/2018 12:00:00 AM,java-beginner',' mongodb-beginner,784,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,48,1000,1000
-2082,.net-beginner',' sharepoint-beginner,4/1/2017 12:00:00 AM,java-beginner',' mongodb-beginner,786,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,49,1000,1000
-2761,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,java-beginner',' mongodb-beginner,788,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,50,1000,1000
-2666,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' wpf-intermediate,776,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,53,1000,1000
-2991,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' wpf-intermediate,779,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,54,1000,1000
-2672,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' wpf-intermediate,792,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,57,1000,1000
-3785,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' wpf-intermediate,794,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,58,1000,1000
-3790,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' wpf-intermediate,796,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,59,1000,1000
-3969,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' wpf-intermediate,819,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,60,1000,1000
-3759,.net-beginner',' sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate',' wpf-intermediate,821,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,61,1000,1000
-2830,.net-beginner',' mongodb-beginner,1/1/2018 12:00:00 AM,.net-intermediate',' wpf-intermediate,823,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,62,1000,1000
-3092,.net-beginner',' mongodb-beginner,1/1/2018 12:00:00 AM,.net-intermediate',' sharepoint-beginner,834,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,63,1000,1000
-2449,.net-beginner',' mongodb-beginner,1/1/2018 12:00:00 AM,.net-intermediate',' sharepoint-beginner,835,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,64,1000,1000
-3349,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner',' sharepoint-beginner,847,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,66,1000,1000
-2183,.net-beginner',' mongodb-beginner,1/1/2017 12:00:00 AM,.net-beginner',' sharepoint-beginner,848,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,67,1000,1000
-2017,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner',' sharepoint-beginner,849,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,68,1000,1000
-2019,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner',' sharepoint-beginner,850,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,69,1000,1000
-2809,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner',' sharepoint-beginner,851,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,70,1000,1000
-2155,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner',' sharepoint-beginner,852,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,71,1000,1000
-2969,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,java-intermediate',' mongodb-intermediate,994,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,76,1000,1000
-3211,.net-beginner',' mongodb-beginner,1/1/2017 12:00:00 AM,java-beginner',' mongodb-beginner,716,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,77,1000,1000
-3901,.net-beginner',' mongodb-beginner,1/1/2018 12:00:00 AM,.net-beginner',' sharepoint-beginner,853,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,72,1000,1000
-2831,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,.net-expert',' wpf-expert,764,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,29,1000,1000
-2228,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,android-expert,8,ONB,Online banking,5/1/2016 12:00:00 AM,1/1/2017 12:00:00 AM,1,1000,1000
-2929,.net-beginner',' mongodb-beginner,9/1/2017 12:00:00 AM,.net-intermediate',' sharepoint-beginner,31,UID,UI re-design,1/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,2,1000,1000
+457,java-expert+java-intermediate+java-beginner,12/1/2016 12:00:00 AM,android-expert,7,ONB,Online banking,5/1/2016 12:00:00 AM,1/1/2017 12:00:00 AM,0,1000,1000
+759,java-expert+java-intermediate+java-beginner,3/3/2017 12:00:00 AM,ios-intermediate,38,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,3,1000,1000
+592,java-expert+java-intermediate+java-beginner,12/1/2017 12:00:00 AM,ios-intermediate,39,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,4,1000,1000
+561,java-expert+java-intermediate+java-beginner,6/1/2017 12:00:00 AM,java-intermediate+ mongodb-intermediate,92,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,5,1000,1000
+150,java-expert+java-intermediate+java-beginner,6/1/2017 12:00:00 AM,java-intermediate+ mongodb-intermediate,93,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,6,1000,1000
+634,java-expert+java-intermediate+java-beginner,6/1/2017 12:00:00 AM,java-intermediate+ mongodb-intermediate,94,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,7,1000,1000
+531,java-expert+java-intermediate+java-beginner,6/1/2017 12:00:00 AM,java-intermediate+ mongodb-intermediate,95,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,8,1000,1000
+424,java-expert+java-intermediate+java-beginner,12/1/2017 12:00:00 AM,android-intermediate,98,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,9,1000,1000
+812,java-expert+java-intermediate+java-beginner,2/1/2017 12:00:00 AM,android-intermediate,99,FCI,Mobility solutions for fast check in,6/1/2016 12:00:00 AM,9/30/2016 12:00:00 AM,10,1000,1000
+202,java-expert+java-intermediate+java-beginner,10/1/2016 12:00:00 AM,.net-expert+ azure-expert,102,INF,Informatics,7/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,11,1000,1000
+155,java-expert+java-intermediate+java-beginner,2/1/2017 12:00:00 AM,ios-intermediate,277,RMC,RMC,6/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,12,1000,1000
+715,java-expert+java-intermediate+java-beginner,4/1/2018 12:00:00 AM,java-expert+ mongodb-expert,677,SNE,S98,7/15/2016 12:00:00 AM,8/31/2016 12:00:00 AM,13,1000,1000
+229,java-expert+java-intermediate+java-beginner,12/31/2016 12:00:00 AM,java-expert+ mongodb-expert,678,SNE,S98,7/15/2016 12:00:00 AM,8/31/2016 12:00:00 AM,14,1000,1000
+153,java-expert+java-intermediate+java-beginner,12/31/2016 12:00:00 AM,.net-expert+ azure-expert,154,MFR,Multi-facility reporting,7/10/2016 12:00:00 AM,2/10/2018 12:00:00 AM,16,1000,1000
+255,java-expert+java-intermediate+java-beginner,3/31/2017 12:00:00 AM,android-intermediate,276,RMC,RMC,6/1/2016 12:00:00 AM,12/1/2016 12:00:00 AM,17,1000,1000
+710,java-expert+java-intermediate+java-beginner,2/1/2017 12:00:00 AM,.net-expert+ wpf-expert,152,MFR,Multi-facility reporting,7/10/2016 12:00:00 AM,2/10/2018 12:00:00 AM,28,1000,1000
+454,java-expert+java-intermediate+java-beginner,2/1/2017 12:00:00 AM,.net-intermediate+ sharepoint-beginner,427,CDM,Customer document management,6/15/2016 12:00:00 AM,9/30/2016 12:00:00 AM,30,1000,1000
+152,java-expert+java-intermediate+java-beginner,3/3/2017 12:00:00 AM,.net-beginner+ wpf-beginner,477,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,32,1000,1000
+834,java-expert+java-intermediate+java-beginner,3/3/2017 12:00:00 AM,.net-beginner+ wpf-beginner,478,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,33,1000,1000
+445,java-expert+java-intermediate+java-beginner,8/1/2016 12:00:00 AM,.net-beginner+ wpf-beginner,479,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,34,1000,1000
+506,java-expert+java-intermediate+java-beginner,12/1/2017 12:00:00 AM,.net-beginner+ wpf-beginner,480,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,35,1000,1000
+760,java-expert+java-intermediate+java-beginner,3/3/2017 12:00:00 AM,.net-beginner+ wpf-beginner,481,SEE,Secure entry,6/20/2016 12:00:00 AM,11/30/2016 12:00:00 AM,36,1000,1000
+258,java-expert+java-intermediate+java-beginner,3/3/2017 12:00:00 AM,.net-beginner+ wpf-beginner,598,MFR,Multi-facility reporting,1/1/2016 12:00:00 AM,2/10/2018 12:00:00 AM,37,1000,1000
+783,java-expert+java-intermediate+java-beginner,2/1/2017 12:00:00 AM,.net-beginner+ wpf-beginner,599,MFR,Multi-facility reporting,1/1/2016 12:00:00 AM,2/10/2018 12:00:00 AM,38,1000,1000
+242,java-expert+java-intermediate+java-beginner,12/1/2017 12:00:00 AM,.net-expert+ sql server-expert,831,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,39,1000,1000
+142,java-expert+java-intermediate+java-beginner,6/1/2017 12:00:00 AM,.net-expert+ sql server-expert,832,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,40,1000,1000
+233,java-expert+java-intermediate+java-beginner,6/1/2017 12:00:00 AM,java-intermediate+ mongodb-intermediate,684,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,41,1000,1000
+803,java-expert+java-intermediate+java-beginner,12/1/2017 12:00:00 AM,java-beginner+ mongodb-beginner,689,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,42,1000,1000
+825,java-expert+java-intermediate+java-beginner,12/1/2017 12:00:00 AM,java-beginner+ mongodb-beginner,691,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,43,1000,1000
+1133,java-intermediate+java-beginner,12/1/2017 12:00:00 AM,java-beginner+ mongodb-beginner,694,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,44,1000,1000
+2001,java-intermediate+java-beginner,2/1/2017 12:00:00 AM,java-beginner+ mongodb-beginner,696,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,45,1000,1000
+1970,java-intermediate+java-beginner,12/1/2017 12:00:00 AM,java-intermediate+ mongodb-intermediate,698,SNE,S98,7/15/2016 12:00:00 AM,7/15/2017 12:00:00 AM,46,1000,1000
+1156,java-intermediate+java-beginner,12/1/2017 12:00:00 AM,java-expert+ mongodb-expert,781,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,55,1000,1000
+1881,java-intermediate+java-beginner,3/3/2017 12:00:00 AM,java-expert+ mongodb-expert,782,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,56,1000,1000
+1669,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,9/30/2016 12:00:00 AM,java-beginner+ mongodb-beginner,720,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,78,910,910
+1628,java-intermediate+ mongodb-intermediate+java-beginner+ mongodb-beginner,9/30/2016 12:00:00 AM,java-intermediate+ mongodb-intermediate,708,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,47,910,910
+744,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,7/15/2016 12:00:00 AM,.net-beginner+ wpf-beginner,846,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,65,948,948
+1114,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,7/15/2016 12:00:00 AM,.net-intermediate+ wpf-intermediate,773,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,52,948,948
+1607,android-intermediate+android-beginner,9/30/2016 12:00:00 AM,android-intermediate,119,INF,Informatics,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,15,876,876
+3300,.net-beginner+ sharepoint-beginner,9/30/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,322,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,21,903,903
+450,.net-beginner+ sharepoint-beginner,12/1/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,319,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,18,883,883
+2483,.net-beginner+ sharepoint-beginner,12/1/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,320,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,19,883,883
+3883,.net-beginner+ sharepoint-beginner,9/30/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,324,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,23,878,878
+3570,.net-beginner+ sharepoint-beginner,9/30/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,323,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,22,913,913
+576,.net-expert+ sharepoint-expert+.net-intermediate+.net-beginner+ sharepoint-intermediate+ sharepoint-beginner,7/15/2016 12:00:00 AM,.net-expert+ sharepoint-expert,770,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,51,898,898
+730,.net-expert+ sharepoint-expert+.net-intermediate+.net-beginner+ sharepoint-intermediate+ sharepoint-beginner,9/30/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,330,WMS,WMS,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,79,893,893
+469,.net-expert+ sharepoint-expert+.net-intermediate+.net-beginner+ sharepoint-intermediate+ sharepoint-beginner,9/30/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,327,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,74,903,903
+790,.net-expert+ wpf-expert+.net-intermediate+.net-beginner+ wpf-intermediate+ wpf-beginner,7/15/2016 12:00:00 AM,.net-expert+ wpf-expert,864,AUT,Automation,9/1/2016 12:00:00 AM,11/30/2016 12:00:00 AM,73,854,854
+1801,.net-intermediate+ sharepoint-intermediate+.net-beginner+ sharepoint-beginner,4/1/2017 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,329,WMS,WMS,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,75,903,903
+3689,.net-beginner+ sharepoint-beginner,12/1/2016 12:00:00 AM,.net-beginner+ sharepoint-beginner,321,WMS,WMS,1/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,20,898,898
+2569,.net-beginner+ sharepoint-beginner,1/1/2018 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,771,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,24,1000,1000
+2899,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,774,EPF,EFPR,8/1/2016 12:00:00 AM,12/31/2016 12:00:00 AM,25,1000,1000
+2639,.net-beginner+ sharepoint-beginner,12/1/2016 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,777,EPF,EFPR,8/1/2016 12:00:00 AM,12/31/2016 12:00:00 AM,26,1000,1000
+2847,.net-beginner+ sharepoint-beginner,4/1/2017 12:00:00 AM,.net-intermediate+ sharepoint-intermediate,780,EPF,EFPR,8/1/2016 12:00:00 AM,12/31/2016 12:00:00 AM,27,1000,1000
+3192,.net-beginner+ sharepoint-beginner,4/1/2017 12:00:00 AM,.net-intermediate+ sharepoint-beginner,833,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,31,1000,1000
+3978,.net-beginner+ sharepoint-beginner,1/1/2018 12:00:00 AM,java-beginner+ mongodb-beginner,784,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,48,1000,1000
+2082,.net-beginner+ sharepoint-beginner,4/1/2017 12:00:00 AM,java-beginner+ mongodb-beginner,786,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,49,1000,1000
+2761,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,java-beginner+ mongodb-beginner,788,SAN,SANA,10/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,50,1000,1000
+2666,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ wpf-intermediate,776,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,53,1000,1000
+2991,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ wpf-intermediate,779,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,54,1000,1000
+2672,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ wpf-intermediate,792,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,57,1000,1000
+3785,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ wpf-intermediate,794,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,58,1000,1000
+3790,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ wpf-intermediate,796,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,59,1000,1000
+3969,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ wpf-intermediate,819,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,60,1000,1000
+3759,.net-beginner+ sharepoint-beginner,12/1/2017 12:00:00 AM,.net-intermediate+ wpf-intermediate,821,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,61,1000,1000
+2830,.net-beginner+ mongodb-beginner,1/1/2018 12:00:00 AM,.net-intermediate+ wpf-intermediate,823,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,62,1000,1000
+3092,.net-beginner+ mongodb-beginner,1/1/2018 12:00:00 AM,.net-intermediate+ sharepoint-beginner,834,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,63,1000,1000
+2449,.net-beginner+ mongodb-beginner,1/1/2018 12:00:00 AM,.net-intermediate+ sharepoint-beginner,835,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,64,1000,1000
+3349,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner+ sharepoint-beginner,847,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,66,1000,1000
+2183,.net-beginner+ mongodb-beginner,1/1/2017 12:00:00 AM,.net-beginner+ sharepoint-beginner,848,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,67,1000,1000
+2017,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner+ sharepoint-beginner,849,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,68,1000,1000
+2019,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner+ sharepoint-beginner,850,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,69,1000,1000
+2809,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner+ sharepoint-beginner,851,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,70,1000,1000
+2155,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,.net-beginner+ sharepoint-beginner,852,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,71,1000,1000
+2969,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,java-intermediate+ mongodb-intermediate,994,SAN,SANA,12/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,76,1000,1000
+3211,.net-beginner+ mongodb-beginner,1/1/2017 12:00:00 AM,java-beginner+ mongodb-beginner,716,SNE,S98,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,77,1000,1000
+3901,.net-beginner+ mongodb-beginner,1/1/2018 12:00:00 AM,.net-beginner+ sharepoint-beginner,853,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,72,1000,1000
+2831,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,.net-expert+ wpf-expert,764,EPF,EFPR,8/1/2016 12:00:00 AM,1/1/2019 12:00:00 AM,29,1000,1000
+2228,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,android-expert,8,ONB,Online banking,5/1/2016 12:00:00 AM,1/1/2017 12:00:00 AM,1,1000,1000
+2929,.net-beginner+ mongodb-beginner,9/1/2017 12:00:00 AM,.net-intermediate+ sharepoint-beginner,31,UID,UI re-design,1/1/2016 12:00:00 AM,4/1/2017 12:00:00 AM,2,1000,1000

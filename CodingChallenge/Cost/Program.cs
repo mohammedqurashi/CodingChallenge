@@ -21,9 +21,8 @@ namespace Calculation
             var resources = ResourceMapping(); //Load and map resouces from resource input xml
             var openings = OpeningMapping();   //Load amd map opening from opening input xml
 
-            int[,] newcostTrue = new int[resources.Count(), openings.Count()];
-
-            var costs = newcostTrue = CostCalculation(resources, openings, true);
+            
+            var costs = CostCalculation(resources, openings, true);
             var newcost = CostCalculation(resources, openings, false);
 
             List<Resource> originalResouces = new List<Resource>(resources);
@@ -33,7 +32,7 @@ namespace Calculation
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, costs);
             var resourceAssignments = rowSol;
-            WriteCSV(resourceAssignments, originalResouces, originalOpenings, newcost, newcostTrue, "FinalOutput-Paas1.csv");
+            WriteCSV(resourceAssignments, originalResouces, originalOpenings, newcost, costs, "FinalOutput-Paas1.csv");
 
             //PASS 2 Run
             resourceAssignments = NextResourcePoolAssignment(rowSol, resources, openings, newcost);
@@ -57,7 +56,7 @@ namespace Calculation
             var openingsCopy = openings;
 
             //Calculate remaining resource-opening mapping
-            RemainingOpenings(resourceAssignments,ref resources, ref openings, costs);
+            var unmatchOpenings = RemainingOpenings(resourceAssignments,ref resources, ref openings, costs);
 
             var cost = CostCalculation(resources, openings, false);
 
@@ -73,7 +72,6 @@ namespace Calculation
             //        var opnId = openings.ElementAt(rowSol[i]).RequestId;
             //        var resourceIndex = resourcesCopy.FindIndex(r => r.EmployeeId == empId);
             //        var openingIndex = openingsCopy.FindIndex(o => o.RequestId == opnId);
-
             //        resourceAssignments[resourceIndex] = openingIndex;
             //    }
             //}
@@ -89,10 +87,9 @@ namespace Calculation
         /// <param name="resources"></param>
         /// <param name="openings"></param>
         /// <param name="costs"></param>
-        private static void RemainingOpenings(int[] resourceAssignments, ref List<Resource> resources, ref List<Openning> openings, int[,] costs)
+        /// <returns>unmatch opening count</returns>
+        private static int RemainingOpenings(int[] resourceAssignments, ref List<Resource> resources, ref List<Openning> openings, int[,] costs)
         {
-            List<Resource> newResourceCollection = new List<Resource>();
-          
             int k = 0,p = 0;
             int[] removeOpeningIndex = new int[openings.Count()];
             foreach (var resource in resources)
@@ -110,36 +107,13 @@ namespace Calculation
                 k++;
             }
 
+            //remove matched opening for next PASS
             for (int i = 0; i < p; i++)
             {
                 openings.Remove(openings.Find(o => o.RequestId == removeOpeningIndex[i]));
             }
 
-            //var newCost = CostCalculation(resources, openings, false);
-            //int[] temp = new int[resources.Count()];
-            //int tempVal = 0, indxarr = 0;
-            //for (int m = 0; m < resources.Count(); m++)
-            //{
-            //    for (int n = 0; n < openings.Count(); n++)
-            //    {
-            //        tempVal += newCost[m, n];
-            //    }
-
-            //    temp[indxarr++] = tempVal;
-            //    tempVal = 0;
-            //}
-
-
-            //for (int h = 0; h < temp.Length; h++)
-            //{
-            //    if (temp[h] < 1000 * openings.Count())
-            //    {
-            //        newResourceCollection.Add(resources.ElementAt(h));
-            //    }
-            //}
-
-            //resources = newResourceCollection;
-
+            return openings.Count();
         }
 
         /// <summary>
@@ -178,6 +152,8 @@ namespace Calculation
         /// <param name="res"></param>
         /// <param name="opn"></param>
         /// <param name="costs"></param>
+        /// <param name="costTrue"></param>
+        /// <param name="fileName"></param>
         private static void WriteCSV(int[] resourceAssignments,List<Resource> res, List<Openning> opn, int[,] costs, int[,] costTrue, string fileName)
         {
             string filePath = @"xml\"+ fileName;
@@ -189,13 +165,17 @@ namespace Calculation
                 {
                     if (assignmentID > -1)
                     {
-                        var rs = res.ElementAt(indx);
+                        var rs = res.ElementAt(indx++);
                         var op = opn.ElementAt(assignmentID);
                     
                         sb.AppendLine(string.Join(delimiter, rs.EmployeeId,
                                                              String.Join("+", rs.Skills.ToArray()),
                                                              rs.AvlDate,
+                                                             String.Join("+", rs.PreviousCustomerExperiance.ToArray()),
                                                              String.Join("+", op.MandotaroySkilss.ToArray()),
+                                                             String.Join("+", rs.DomainExperiance.ToArray()),
+                                                             String.Join("+", op.ProjectDomain.ToArray()),
+                                                             op.CustomerName,
                                                              op.RequestId,
                                                              op.ProjectKey,
                                                              op.ProjectName,
@@ -206,7 +186,6 @@ namespace Calculation
                                                              costTrue[indx, assignmentID]));
                     }
 
-                    indx++;
                 }
                     
            
@@ -320,6 +299,4 @@ namespace Calculation
         }
 
     }
-
-
 }
