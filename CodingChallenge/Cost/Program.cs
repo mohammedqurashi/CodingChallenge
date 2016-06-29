@@ -36,13 +36,16 @@ namespace Calculation
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, costs);
             var resourceAssignments = rowSol;
-            WriteCSV(resourceAssignments, originalResouces, originalOpenings, newcost, costs, "FinalOutput-Paas1-"+ DateTime.Now.ToString("ddMMyyyhhmmss") +".csv");
-
+            var pass1Combi = PopulateResultCombinations(rowSol, resources, openings, costs);
+            
             //PASS 2 Run
             resourceAssignments = NextResourcePoolAssignment(rowSol, resources, openings, newcost);
             var costPass2 = CostCalculation(resources, openings, true); 
-            WriteCSV(resourceAssignments, resources, openings, costPass2, costPass2, "FinalOutput-Pass2-"+ DateTime.Now.ToString("ddMMyyyhhmmss") +".csv");
+            var pass2Combi = PopulateResultCombinations(resourceAssignments, resources, openings, costPass2);
 
+
+            var result = pass1Combi.Union(pass2Combi);
+            WriteCSV(result.ToList(), originalResouces, originalOpenings, "FinalOutput-" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
             sw.Stop(); Console.WriteLine("End Calculation :" + sw.Elapsed); Console.ReadKey();
         }
 
@@ -57,9 +60,6 @@ namespace Calculation
         private static int[] NextResourcePoolAssignment(int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
         {
 
-            var resourcesCopy = resources;
-            var openingsCopy = openings;
-
             //Calculate remaining resource-opening mapping
             var unmatchOpenings = RemainingOpenings(resourceAssignments,ref resources, ref openings, costs);
 
@@ -68,20 +68,6 @@ namespace Calculation
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, cost);
 
-
-            //for (int i = 0; i < rowSol.Length; i++)
-            //{
-            //    if (rowSol[i] > -1)
-            //    {
-            //        var empId = resources.ElementAt(i).EmployeeId;
-            //        var opnId = openings.ElementAt(rowSol[i]).RequestId;
-            //        var resourceIndex = resourcesCopy.FindIndex(r => r.EmployeeId == empId);
-            //        var openingIndex = openingsCopy.FindIndex(o => o.RequestId == opnId);
-            //        resourceAssignments[resourceIndex] = openingIndex;
-            //    }
-            //}
-
-            //return resourceAssignments;
             return rowSol;
         }
 
@@ -159,23 +145,22 @@ namespace Calculation
         /// <param name="costs"></param>
         /// <param name="costTrue"></param>
         /// <param name="fileName"></param>
-        private static void WriteCSV(int[] resourceAssignments,List<Resource> res, List<Openning> opn, int[,] costs, int[,] costTrue, string fileName)
+        private static void WriteCSV(List<Combination> combi, List<Resource> res, List<Openning> opn, string fileName) 
         {
             string filePath = @"xml\"+ fileName;
             string delimiter = ",";
-            int indx = 0;
             StringBuilder sb = new StringBuilder();
 
             //header to csv
             sb.AppendLine("EmployeeId,RequestId,Skills,MandotaroySkilss,AvlDate,RequestStartDate,AllocationEndDate,PreviousCustomerExperiance,CustomerName,DomainExperiance,ProjectDomain,ProjectKey,NAGP,Rating,IsKeyProject,IsKeyPosition,cost1,cost2,score");
 
-                foreach (var assignmentID in resourceAssignments)
-                {
-                    if (assignmentID > -1)
+                    foreach (var item in combi)
                     {
-                        var rs = res.ElementAt(indx);
-                        var op = opn.ElementAt(assignmentID);
-                        double score = (1000 - costs[indx, assignmentID]) *0.01;
+    
+                        var rs = res.Find(r=>r.EmployeeId == item.EmpolyeeId);
+                        var op = opn.Find(o=> o.RequestId == item.RequestId);
+                        var cst = item.Cost;
+                        double score = (1000 - cst) *0.01;
                         sb.AppendLine(string.Join(delimiter, rs.EmployeeId,
                                                              op.RequestId,
                                                              String.Join("+", rs.Skills.ToArray()),
@@ -192,13 +177,12 @@ namespace Calculation
                                                              rs.Rating,
                                                              op.IsKeyProject,
                                                              op.IsKeyPosition,
-                                                             costs[indx, assignmentID],
-                                                             costTrue[indx, assignmentID],
+                                                             cst,
+                                                             cst,
                                                              score));
                     }
 
-                    indx++;
-                }
+         
                     
            
               File.WriteAllText(filePath, sb.ToString());
@@ -310,5 +294,38 @@ namespace Calculation
             return skillList.ToList<string>();
         }
 
+        /// <summary>
+        /// populate employee, opening and cost collection
+        /// </summary>
+        /// <param name="rowSol"></param>
+        /// <param name="resources"></param>
+        /// <param name="openings"></param>
+        /// <param name="costs"></param>
+        /// <returns>list of combination</returns>
+        private static List<Combination> PopulateResultCombinations(int[] rowSol, List<Resource> resources, List<Openning> openings, int[,] costs) {
+
+            List<Combination> combinations = new List<Combination>();
+
+            //var combi = new int[resources.Count(), 3];
+
+            for (int i = 0; i < rowSol.Length; i++)
+            {
+                if (rowSol[i] > -1 && costs[i, rowSol[i]]< 1000)
+                {
+                    combinations.Add(new Combination
+                    {
+                        EmpolyeeId = resources.ElementAt(i).EmployeeId,
+                        RequestId = openings.ElementAt(rowSol[i]).RequestId,
+                        Cost = costs[i, rowSol[i]]
+                    });
+
+                }
+            }
+
+            return combinations;
+
+        }
+
     }
+
 }
