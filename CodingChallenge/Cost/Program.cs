@@ -6,7 +6,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-
 namespace Calculation
 {
     class Program
@@ -15,6 +14,7 @@ namespace Calculation
         private static char[] charSeparators = new char[] { ',' };
         private static IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
         private static int passCounter;
+        static List<Combination> blockCombination = new List<Combination>();
 
         static void Main(string[] args)
         {
@@ -27,25 +27,39 @@ namespace Calculation
             var openings = OpeningMapping();   //Load amd map opening from opening input xml
             List<Resource> originalResouces = new List<Resource>(resources);
             List<Openning> originalOpenings = new List<Openning>(openings);
-            var costs = CostCalculation(resources, openings, true);
+            var result = new List<Combination>();
+            var costs = CostCalculation(resources, openings, blockCombination, true);
+            bool isRevaluationRequired = false;
+
+
+            var resourceAssignments = ResetResourceAssignment(resources);
+
             passCounter = 1;
 
-          
-            var resourceAssignments = new int[resources.Count()];
+            do
+            {
+                result = SolveItertiveLAP(ref resourceAssignments, resources, openings, costs);
+                isRevaluationRequired = ProjectAverageScore(result); //Calculate Average Project Score
+                resourceAssignments = ResetResourceAssignment(resources);
+                openings = OpeningMapping();
+                resources = ResourceMapping(); 
+            } while (isRevaluationRequired);
 
-            for (int h = 0; h < resourceAssignments.Length; h++)
-                resourceAssignments[h] = -1;
-
-            var result = SolveItertiveLAP(ref resourceAssignments, resources, openings, costs);
+            
 
 
-            //var isRevaluationRequired = ProjectAverageScore(result); //Calculate Average Project Score
-
-
-            WriteCSV(result, originalResouces, originalOpenings, "FinalOutput-" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
+            WriteCSV(result, originalResouces, originalOpenings, "2390_Superman_" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
             sw.Stop(); Console.WriteLine("End Calculation :" + sw.Elapsed); Console.ReadKey();
         }
 
+        private static int[] ResetResourceAssignment(List<Resource> resources) {
+
+            var resourceAssignments = new int[resources.Count()];
+            for (int h = 0; h < resourceAssignments.Length; h++)
+                resourceAssignments[h] = -1;
+
+            return resourceAssignments;
+        }
 
         /// <summary>
         /// Solve iterative LAP problem
@@ -62,9 +76,9 @@ namespace Calculation
             {
                 var passResultCombination = PassIteration(ref resourceAssignments, resources, openings, costs);
                 count = passResultCombination.Count();
-                costs = CostCalculation(resources, openings, false);
+                costs = CostCalculation(resources, openings, blockCombination,false);
                 result = result.Concat(passResultCombination).ToList();
-            } while (count > 0 && passCounter < 30);
+            } while (count > 0);
 
             return result;
         }
@@ -81,7 +95,7 @@ namespace Calculation
         {
             Console.WriteLine("Next PASS " + passCounter.ToString() + " started");
             resourceAssignments = NextResourcePoolAssignment(ref resourceAssignments, resources, openings, costs);
-            var newcosts = CostCalculation(resources, openings, false);
+            var newcosts = CostCalculation(resources, openings, blockCombination, false);
             var passResultCombination = PopulateResultCombinations(resourceAssignments, resources, openings, newcosts);
             Console.WriteLine("Pass "  + passCounter.ToString() + " complete");
             passCounter++;
@@ -101,7 +115,7 @@ namespace Calculation
 
             //Calculate remaining resource-opening mapping
             var unmatchOpenings = RemainingOpenings(ref resourceAssignments,ref resources, ref openings, costs);
-            var cost = CostCalculation(resources, openings, false);
+            var cost = CostCalculation(resources, openings, blockCombination, false);
 
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, cost);
@@ -152,7 +166,7 @@ namespace Calculation
         /// <param name="openings"></param>
         /// <param name="IsPenaltyRequired"></param>
         /// <returns>cost materics</returns>
-        private static int[,] CostCalculation(List<Resource> resources, List<Openning> openings, bool IsPenaltyRequired)
+        private static int[,] CostCalculation(List<Resource> resources, List<Openning> openings,List<Combination> blockCombination, bool IsPenaltyRequired)
         {
             int[,] cost = new int[resources.Count(), openings.Count()];
             int j, i = j = 0;
@@ -163,7 +177,20 @@ namespace Calculation
 
                 foreach (var opnn in openings)
                 {
-                    cost[i, j] = score.CalculatedIndivisualScore(res, opnn, IsPenaltyRequired);
+                    var m = from bc in blockCombination
+                            where bc.EmpolyeeId == res.EmployeeId && bc.RequestId == opnn.RequestId
+                            select bc;
+                   
+                    if (m.Any())
+                    {
+                       // Console.WriteLine(passCounter.ToString());
+                            cost[i, j] = 1000;
+                    }
+                    else
+                    {
+                        cost[i, j] = score.CalculatedIndivisualScore(res, opnn, IsPenaltyRequired);
+                    }
+
                     j++;
                 }
 
@@ -248,7 +275,7 @@ namespace Calculation
             List<Resource> resources = new List<Resource>();
 
             //  Loading resource
-            foreach (var item in LoadXML("xml/resources.xml").AsEnumerable())
+            foreach (var item in LoadXML("xml/Datasheet_Resources.xml").AsEnumerable())
             {
                 Resource res = new Resource();
                 res.EmployeeId                 = Convert.ToInt32(item["EmployeeID"]);
@@ -277,7 +304,7 @@ namespace Calculation
             List<Openning> openings = new List<Openning>();
             
             //Loading openings
-            foreach (var item in LoadXML("xml/openings.xml").AsEnumerable())
+            foreach (var item in LoadXML("xml/Datasheet_Openings.xml").AsEnumerable())
             {
                 Openning opnn = new Openning();
                 opnn.RequestId           = Convert.ToInt32(item["RequestID"]);
@@ -298,7 +325,7 @@ namespace Calculation
                 opnn.AllocationEndDate   = Convert.ToDateTime(item["AllocationEndDate"], culture);
                 openings.Add(opnn);
             }
-
+            
             return openings;
         }
 
@@ -368,11 +395,9 @@ namespace Calculation
         /// </summary>
         /// <param name="results"></param>
         /// <returns></returns>
-        private static List<Combination> ProjectAverageScore(List<Combination> results)
+        private static bool ProjectAverageScore(List<Combination> results)
         {
-     
-            var blockedCombinations = new List<Combination>();
-
+            bool isRevaluationRequired = false;
             var projectAverageCost = from combination in results
                                      group combination by new
                                          {
@@ -405,20 +430,22 @@ namespace Calculation
 
                     foreach (var item2 in projectWiseMinCost.Where(pwc=> pwc.ProjectKey == item.ProjectKey))
                     {
-                        blockedCombinations.Add(new Combination
+                        blockCombination.Add(new Combination
                         {
                             ProjectKey = item2.ProjectKey,
                             EmpolyeeId = item2.ResourceId,
                             RequestId = item2.OpeningId,
                             Cost = item2.MinCost
                         });
-                    }
 
+                       
+                    }
+                    isRevaluationRequired = true;
                 }
 
             }
 
-            return blockedCombinations;
+            return isRevaluationRequired;
 
         }
 

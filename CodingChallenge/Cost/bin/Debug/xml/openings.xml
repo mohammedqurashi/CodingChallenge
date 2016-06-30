@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <resource-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <record>
+    <RequestID>1001</RequestID>
+    <ClientKey>IFS</ClientKey>
+    <ProjectKey>XYZ</ProjectKey>
+    <CustomerName>IFS Bank</CustomerName>
+    <ProjectName>Online banking</ProjectName>
+    <IsKeyProject>Y</IsKeyProject>
+    <ProjectDomain>BFSI</ProjectDomain>
+    <ProjectStartDate>01-01-2016</ProjectStartDate>
+    <ProjectEndDate>01-01-2018</ProjectEndDate>
+    <Role>Developer</Role>
+    <IsKeyPosition>Y</IsKeyPosition>
+    <YearsOfExperience>8</YearsOfExperience>
+    <MandatorySkills>Python-Expert</MandatorySkills>
+    <ClientCommunication>N</ClientCommunication>
+    <RequestStartDate>01-05-2016</RequestStartDate>
+    <AllocationEndDate>01-01-2017</AllocationEndDate>
+  </record>
 	<record>
 		<RequestID>1</RequestID>
 		<ClientKey>IFS</ClientKey>
