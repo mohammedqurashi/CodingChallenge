@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Calculation
@@ -10,7 +11,7 @@ namespace Calculation
             //TODO: Something
         }
 
-        public int CalculatedIndivisualScore(Resource res, Openning opn, bool IsWithPanelty = true)
+        public int CalculatedIndivisualScore(Resource res, Openning opn,bool IsWithPanelty = true) // List<Combination> blockCombination,
         {
             double score = 0;
 
@@ -25,10 +26,10 @@ namespace Calculation
                     score = opn.ProjectDomain != null ? (!res.DomainExperiance.Except(opn.ProjectDomain).Any() ? score + 0.2 : score) : score;
                     score = opn.CustomerName  != null ? (res.PreviousCustomerExperiance.Contains(opn.CustomerName) ? score + 0.3 : score) : score;
                     score = res.YearsOfExperiance - opn.YearsOfExperiance > 0 ? Math.Max(0, score - (0.05 * (res.YearsOfExperiance - opn.YearsOfExperiance))) : score;
-                    score = opn.IsKeyProject && opn.IsKeyPosition ? Math.Min(2, score) : score;
-                    score = opn.IsKeyProject && !opn.IsKeyPosition ? Math.Min(1.3, score) : score;
-                    score = !opn.IsKeyProject && opn.IsKeyPosition ? Math.Min(1.5, score) : score;
-                    score = !opn.IsKeyProject && !opn.IsKeyPosition ? Math.Min(1, score) : score;
+                    score = opn.IsKeyProject && opn.IsKeyPosition ? Math.Max(2, score) : score;
+                    score = opn.IsKeyProject && !opn.IsKeyPosition ? Math.Max(1.3, score) : score;
+                    score = !opn.IsKeyProject && opn.IsKeyPosition ? Math.Max(1.5, score) : score;
+                    score = !opn.IsKeyProject && !opn.IsKeyPosition ? Math.Max(1, score) : score;
                     
 
                     if(IsWithPanelty)

@@ -14,6 +14,7 @@ namespace Calculation
         //global variables
         private static char[] charSeparators = new char[] { ',' };
         private static IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
+        private static int passCounter;
 
         static void Main(string[] args)
         {
@@ -24,29 +25,67 @@ namespace Calculation
 
             var resources = ResourceMapping(); //Load and map resouces from resource input xml
             var openings = OpeningMapping();   //Load amd map opening from opening input xml
-
-            
-            var costs = CostCalculation(resources, openings, true);
-            var newcost = CostCalculation(resources, openings, false);
-
             List<Resource> originalResouces = new List<Resource>(resources);
             List<Openning> originalOpenings = new List<Openning>(openings);
-            
-            //PASS 1 Run
-            var rowSol = new int[resources.Count()];
-            var output = LAPJV.FindAssignments(ref rowSol, costs);
-            var resourceAssignments = rowSol;
-            var pass1Combi = PopulateResultCombinations(rowSol, resources, openings, costs);
-            
-            //PASS 2 Run
-            resourceAssignments = NextResourcePoolAssignment(rowSol, resources, openings, newcost);
-            var costPass2 = CostCalculation(resources, openings, true); 
-            var pass2Combi = PopulateResultCombinations(resourceAssignments, resources, openings, costPass2);
+            var costs = CostCalculation(resources, openings, true);
+            passCounter = 1;
+
+          
+            var resourceAssignments = new int[resources.Count()];
+
+            for (int h = 0; h < resourceAssignments.Length; h++)
+                resourceAssignments[h] = -1;
+
+            var result = SolveItertiveLAP(ref resourceAssignments, resources, openings, costs);
 
 
-            var result = pass1Combi.Union(pass2Combi);
-            WriteCSV(result.ToList(), originalResouces, originalOpenings, "FinalOutput-" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
+            //var isRevaluationRequired = ProjectAverageScore(result); //Calculate Average Project Score
+
+
+            WriteCSV(result, originalResouces, originalOpenings, "FinalOutput-" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
             sw.Stop(); Console.WriteLine("End Calculation :" + sw.Elapsed); Console.ReadKey();
+        }
+
+
+        /// <summary>
+        /// Solve iterative LAP problem
+        /// </summary>
+        /// <param name="resourceAssignments"></param>
+        /// <param name="resources"></param>
+        /// <param name="openings"></param>
+        /// <param name="costs"></param>
+        /// <returns></returns>
+        private static List<Combination> SolveItertiveLAP(ref int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs) {
+            int count = 0;
+            var result = new List<Combination>();
+            do
+            {
+                var passResultCombination = PassIteration(ref resourceAssignments, resources, openings, costs);
+                count = passResultCombination.Count();
+                costs = CostCalculation(resources, openings, false);
+                result = result.Concat(passResultCombination).ToList();
+            } while (count > 0 && passCounter < 30);
+
+            return result;
+        }
+
+        /// <summary>
+        /// dynamics iteration behalf of found combination count
+        /// </summary>
+        /// <param name="resourceAssignments"></param>
+        /// <param name="resources"></param>
+        /// <param name="openings"></param>
+        /// <param name="costs"></param>
+        /// <returns></returns>
+        private static List<Combination> PassIteration(ref int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
+        {
+            Console.WriteLine("Next PASS " + passCounter.ToString() + " started");
+            resourceAssignments = NextResourcePoolAssignment(ref resourceAssignments, resources, openings, costs);
+            var newcosts = CostCalculation(resources, openings, false);
+            var passResultCombination = PopulateResultCombinations(resourceAssignments, resources, openings, newcosts);
+            Console.WriteLine("Pass "  + passCounter.ToString() + " complete");
+            passCounter++;
+            return passResultCombination;
         }
 
         /// <summary>
@@ -57,17 +96,16 @@ namespace Calculation
         /// <param name="openings"></param>
         /// <param name="costs"></param>
         /// <returns>assignment list</returns>
-        private static int[] NextResourcePoolAssignment(int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
+        private static int[] NextResourcePoolAssignment(ref int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
         {
 
             //Calculate remaining resource-opening mapping
-            var unmatchOpenings = RemainingOpenings(resourceAssignments,ref resources, ref openings, costs);
-
+            var unmatchOpenings = RemainingOpenings(ref resourceAssignments,ref resources, ref openings, costs);
             var cost = CostCalculation(resources, openings, false);
 
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, cost);
-
+            resourceAssignments = rowSol;
             return rowSol;
         }
 
@@ -79,13 +117,13 @@ namespace Calculation
         /// <param name="openings"></param>
         /// <param name="costs"></param>
         /// <returns>unmatch opening count</returns>
-        private static int RemainingOpenings(int[] resourceAssignments, ref List<Resource> resources, ref List<Openning> openings, int[,] costs)
+        private static int RemainingOpenings(ref int[] resourceAssignments, ref List<Resource> resources, ref List<Openning> openings, int[,] costs)
         {
             int k = 0,p = 0;
             int[] removeOpeningIndex = new int[openings.Count()];
             foreach (var resource in resources)
             {
-                if (costs[k, resourceAssignments[k]] < 1000)
+                if (resourceAssignments[k] > -1 && costs[k, resourceAssignments[k]] < 1000)
                 {
                     var opn = openings.ElementAt(resourceAssignments[k]);
 
@@ -306,8 +344,6 @@ namespace Calculation
 
             List<Combination> combinations = new List<Combination>();
 
-            //var combi = new int[resources.Count(), 3];
-
             for (int i = 0; i < rowSol.Length; i++)
             {
                 if (rowSol[i] > -1 && costs[i, rowSol[i]]< 1000)
@@ -316,6 +352,7 @@ namespace Calculation
                     {
                         EmpolyeeId = resources.ElementAt(i).EmployeeId,
                         RequestId = openings.ElementAt(rowSol[i]).RequestId,
+                        ProjectKey = openings.ElementAt(rowSol[i]).ProjectKey,
                         Cost = costs[i, rowSol[i]]
                     });
 
@@ -323,6 +360,65 @@ namespace Calculation
             }
 
             return combinations;
+
+        }
+
+        /// <summary>
+        /// Calculate project wise average cost
+        /// </summary>
+        /// <param name="results"></param>
+        /// <returns></returns>
+        private static List<Combination> ProjectAverageScore(List<Combination> results)
+        {
+     
+            var blockedCombinations = new List<Combination>();
+
+            var projectAverageCost = from combination in results
+                                     group combination by new
+                                         {
+                                             combination.ProjectKey
+                                         } into result
+                                     select new
+                                         {
+                                            Avg = result.Average(pc => (1000 - pc.Cost) * 0.01),
+                                            ProjectKey = result.Key.ProjectKey
+                                         };
+
+            var projectWiseMinCost = from combination in results
+                                     group combination by new
+                                     {
+                                         combination.ProjectKey
+                                     } into result
+                                     select new
+                                     {
+                                         MinCost = result.Min(pc => pc.Cost),
+                                         ProjectKey = result.Key.ProjectKey,
+                                         ResourceId = result.OrderBy(a=> a.Cost).First().EmpolyeeId,
+                                         OpeningId = result.OrderBy(a => a.Cost).First().RequestId
+                                     };
+
+
+            foreach (var item in projectAverageCost)
+            {
+                if (item.Avg > 1.5)
+                {
+
+                    foreach (var item2 in projectWiseMinCost.Where(pwc=> pwc.ProjectKey == item.ProjectKey))
+                    {
+                        blockedCombinations.Add(new Combination
+                        {
+                            ProjectKey = item2.ProjectKey,
+                            EmpolyeeId = item2.ResourceId,
+                            RequestId = item2.OpeningId,
+                            Cost = item2.MinCost
+                        });
+                    }
+
+                }
+
+            }
+
+            return blockedCombinations;
 
         }
 
