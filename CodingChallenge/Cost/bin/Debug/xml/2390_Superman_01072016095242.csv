@@ -1,0 +1,176 @@
+EmployeeId,RequestId,Skills,MandotaroySkilss,AvlDate,RequestStartDate,AllocationEndDate,PreviousCustomerExperiance,CustomerName,DomainExperiance,ProjectDomain,ProjectKey,NAGP,Rating,IsKeyProject,IsKeyPosition,cost1,cost2,score
+15003,10001,python-expert+python-intermediate+python-beginner,python-expert,1/2/2017 12:00:00 AM,5/1/2016 12:00:00 AM,1/1/2017 12:00:00 AM,ifs bank,ifs bank,aviation,bfsi,xyz,False,b+,True,True,955,955,0.45
+457,2179,java-expert+java-intermediate+java-beginner,java-expert,6/2/2017 12:00:00 AM,1/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,landmark,aviation solutions,ecommerce,aviation,fci,False,b+,True,True,900,900,1
+150,204,java-expert+java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,,aviation,fci,False,b+,True,False,905,905,0.95
+424,179,java-expert+java-intermediate+java-beginner,java-expert,6/2/2017 12:00:00 AM,1/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,,aviation,fci,False,b+,True,True,885,885,1.15
+812,2086,java-expert+java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,erste,ifs bank,bfsi,bfsi,onb,True,a,True,False,885,885,1.15
+202,2268,java-expert+java-intermediate+java-beginner,java-expert,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,netent,nagarro,gaming,gaming,mre,True,a+,True,True,865,865,1.35
+229,268,java-expert+java-intermediate+java-beginner,java-expert,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,netent,nagarro,gaming,gaming,mre,True,a,True,True,865,865,1.35
+142,2207,java-expert+java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,ecommerce,aviation,fci,False,b+,True,False,975,975,0.25
+1572,86,java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,bfsi,bfsi,onb,False,b+,True,False,910,910,0.9
+1116,84,java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,qwerty,ifs bank,bfsi,bfsi,onb,False,a,True,False,905,905,0.95
+1537,2079,java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,bfsi,bfsi,onb,False,b+,True,False,910,910,0.9
+1152,178,java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,1/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,bfsi,aviation,fci,False,b,True,True,900,900,1
+1533,272,java-intermediate+java-beginner,java-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,nagarro,gaming,gaming,mre,False,b+,True,False,895,895,1.05
+3374,2081,java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,gaming,bfsi,onb,False,b+,True,False,905,905,0.95
+3939,2202,java-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,aviation,aviation,fci,False,a,True,False,870,870,1.3
+2598,198,java-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,ecommerce,aviation,fci,False,b+,True,False,915,915,0.85
+2658,85,java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,gaming,bfsi,onb,False,b,True,False,910,910,0.9
+3425,202,java-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b+,True,False,905,905,0.95
+2409,87,java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,blackbaud,ifs bank,ecommerce,bfsi,onb,False,b,True,False,915,915,0.85
+2311,2712,java-beginner,java-beginner,7/16/2017 12:00:00 AM,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,,nagarro,ecommerce,,sne,False,b+,False,False,900,900,1
+3281,2200,java-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,ecommerce,aviation,fci,False,b+,True,False,905,905,0.95
+3230,2082,java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,gaming,bfsi,onb,False,b+,True,False,905,905,0.95
+2756,201,java-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b,True,False,910,910,0.9
+811,2206,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,aviation,aviation,fci,False,b,True,False,905,905,0.95
+288,2468,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-expert+ oracle-expert,8/1/2017 12:00:00 AM,12/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,,customer analytics,aviation,,fdp,False,b+,False,True,920,920,0.8
+734,208,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,aviation,aviation,fci,False,b,True,False,905,905,0.95
+583,2203,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,aviation,aviation,fci,False,b+,True,False,910,910,0.9
+547,2269,java-expert+ oracle-intermediate+java-intermediate+java-beginner+ oracle-beginner,java-intermediate+ oracle-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,blackbaud,nagarro,ecommerce,gaming,mre,False,b+,True,True,925,925,0.75
+379,2709,java-expert+ oracle-intermediate+java-intermediate+java-beginner+ oracle-beginner,java-intermediate+ oracle-intermediate,7/16/2017 12:00:00 AM,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,nagarro+ ifs bank,nagarro,aviation,,sne,False,b+,False,False,905,905,0.95
+228,2726,java-expert+ oracle-intermediate+java-intermediate+java-beginner+ oracle-beginner,java-intermediate+ oracle-intermediate,7/16/2017 12:00:00 AM,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,,nagarro,ecommerce,,sne,False,b+,False,False,950,950,0.5
+1976,717,java-beginner+ oracle-beginner,java-beginner,7/16/2017 12:00:00 AM,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,shopperstop,nagarro,ecommerce,,sne,False,b+,False,False,915,915,0.85
+2195,80,java-beginner+ oracle-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,customer analytics,ifs bank,,bfsi,onb,False,b+,True,False,900,900,1
+1510,186,android-expert+android-intermediate+android-beginner,android-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b+,True,False,920,920,0.8
+1114,470,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,netenvironment,netenvironment,bfsi,life sciences,cdd,False,b+,True,False,905,905,0.95
+1544,187,android-intermediate+android-beginner,android-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b+,True,False,920,920,0.8
+1719,2187,android-beginner,android-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b+,True,False,915,915,0.85
+1480,2127,android-beginner,android-beginner,3/2/2017 12:00:00 AM,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,swissair+ lufthansa,ge,gaming,industrial automation,inf,False,b,True,False,915,915,0.85
+2596,88,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,customer analytics,ifs bank,gaming,bfsi,onb,False,b+,True,False,915,915,0.85
+3860,2089,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,customer analytics,ifs bank,,bfsi,onb,False,b+,True,False,880,880,1.2
+2707,2742,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,,tbx,,energy & utilities,mbs,False,b,False,False,900,900,1
+3314,168,.net-beginner+ sql server-beginner,.net-beginner,12/2/2017 12:00:00 AM,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+2685,2736,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,,tbx,,energy & utilities,mbs,False,b+,False,False,900,900,1
+2528,2250,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,tbx,ge,energy & utilities,industrial automation,inf,False,a,True,False,890,890,1.1
+3212,2738,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,aviation solutions,tbx,,energy & utilities,mbs,False,a,False,False,900,900,1
+993,2649,.net-intermediate+.net-beginner,.net-beginner,12/2/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,aviation solutions,aviation solutions,,,mfr,False,b+,True,False,890,890,1.1
+1045,2655,.net-intermediate+.net-beginner,.net-beginner,12/2/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,aviation solutions,aviation solutions,,,mfr,False,b+,True,False,890,890,1.1
+520,646,.net-intermediate+.net-beginner,.net-beginner,12/2/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,aviation solutions,aviation solutions,life sciences,,mfr,False,b+,True,False,925,925,0.75
+1219,974,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,aviation solutions+ ge,ge,,,wpe,False,b+,True,False,890,890,1.1
+431,968,.net-expert+.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,ge,ge,industrial automation,,wpe,False,b+,True,False,905,905,0.95
+748,2977,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,rbi,ge,publishing,,wpe,False,b+,True,False,920,920,0.8
+707,2978,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,rbi,ge,publishing,,wpe,False,b+,True,False,925,925,0.75
+1311,975,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,aviation solutions+ ge,ge,,,wpe,False,b+,True,False,890,890,1.1
+490,2973,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,media & entertainment,,wpe,False,b+,True,False,930,930,0.7
+1296,977,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,,,wpe,False,a,True,False,880,880,1.2
+1423,970,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,sne,ge,,,wpe,False,b+,True,False,885,885,1.15
+2582,2650,.net-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,blackbaud,aviation solutions,,,mfr,False,b,True,False,895,895,1.05
+2731,2651,.net-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,tbx,aviation solutions,energy & utilities,,mfr,False,a,True,False,900,900,1
+2386,2473,.net-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,tbx,netenvironment,public sector,life sciences,cdd,False,b+,True,False,915,915,0.85
+2694,2470,.net-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,sne,netenvironment,gaming,life sciences,cdd,False,b,True,False,910,910,0.9
+2818,2646,.net-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,sne,aviation solutions,,,mfr,False,b+,True,False,890,890,1.1
+2920,2652,.net-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,blackbaud,aviation solutions,public sector,,mfr,False,a,True,False,900,900,1
+2509,2474,.net-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,tbx,netenvironment,gaming,life sciences,cdd,False,b+,True,False,915,915,0.85
+2763,2471,.net-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,tbx,netenvironment,media & entertainment,life sciences,cdd,False,b,True,False,910,910,0.9
+956,2330,.net-intermediate+ sharepoint-intermediate+.net-beginner+ sharepoint-beginner,.net-intermediate+ sharepoint-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,blackbaud,sne,public sector,,wms,False,b+,False,False,920,920,0.8
+3804,735,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,tbx,tbx,,energy & utilities,mbs,False,b+,False,False,900,900,1
+2549,736,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,ecova,tbx,energy & utilities,energy & utilities,mbs,False,b+,False,False,900,900,1
+3875,737,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,tbx,tbx,,energy & utilities,mbs,False,b,False,False,900,900,1
+3215,246,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,blackbaud,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+3732,2656,.net-beginner+ sql server-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,blackbaud,aviation solutions,,,mfr,False,b,True,False,880,880,1.2
+3383,244,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,blackbaud,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+2835,250,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,blackbaud,ge,,industrial automation,inf,False,b,True,False,880,880,1.2
+2728,738,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,tbx,tbx,,energy & utilities,mbs,False,b,False,False,900,900,1
+3920,739,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,tbx,tbx,,energy & utilities,mbs,False,b,False,False,900,900,1
+2964,740,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,sne,tbx,,energy & utilities,mbs,False,b+,False,False,900,900,1
+3682,741,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,sne,tbx,,energy & utilities,mbs,False,b,False,False,900,900,1
+2708,742,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,tbx,tbx,,energy & utilities,mbs,False,b,False,False,900,900,1
+2801,2739,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,tbx,tbx,,energy & utilities,mbs,False,b,False,False,900,900,1
+2741,2740,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,blackbaud,tbx,,energy & utilities,mbs,False,b+,False,False,900,900,1
+3201,2741,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,tbx,tbx,,energy & utilities,mbs,False,b+,False,False,900,900,1
+3999,2737,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,,tbx,,energy & utilities,mbs,False,b+,False,False,900,900,1
+1459,2972,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,ecommerce,,wpe,False,b+,True,False,905,905,0.95
+1078,2975,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,admiral,ge,gaming,,wpe,False,b+,True,False,910,910,0.9
+1895,978,.net-intermediate+ mongodb-intermediate+.net-beginner+ mongodb-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,tbx,ge,media & entertainment,,wpe,False,b+,True,False,900,900,1
+1214,979,.net-intermediate+ mongodb-intermediate+.net-beginner+ mongodb-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,publishing,,wpe,False,b+,True,False,910,910,0.9
+2155,980,.net-beginner+ mongodb-beginner,.net-beginner+ mongodb-beginner,1/2/2018 12:00:00 AM,11/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,netenvironment,ge,energy & utilities,,wpe,False,b+,True,False,910,910,0.9
+6424,2204,java-expert+java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,,aviation,fci,False,b+,True,False,920,920,0.8
+6812,89,java-expert+java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,erste,ifs bank,bfsi,bfsi,onb,True,a,True,False,885,885,1.15
+6155,206,java-expert+java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,,aviation,fci,False,b+,True,False,905,905,0.95
+6229,2274,java-expert+java-intermediate+java-beginner,java-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,netent,nagarro,gaming,gaming,mre,True,a,True,False,895,895,1.05
+6153,207,java-expert+java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,,aviation,fci,False,b+,True,False,905,905,0.95
+6255,2272,java-expert+java-intermediate+java-beginner,java-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,netent,nagarro,gaming,gaming,mre,True,a,True,False,895,895,1.05
+6142,2208,java-expert+java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,ecommerce,aviation,fci,False,b+,True,False,975,975,0.25
+6803,2205,java-expert+java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,lufthansa,aviation solutions,,aviation,fci,False,b+,True,False,905,905,0.95
+7636,2087,java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,bfsi,bfsi,onb,False,b+,True,False,905,905,0.95
+6967,2273,java-intermediate+java-beginner,java-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,nagarro,gaming,gaming,mre,False,b+,True,False,905,905,0.95
+7572,79,java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,bfsi,bfsi,onb,False,b+,True,False,910,910,0.9
+7537,2078,java-intermediate+java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,bfsi,bfsi,onb,False,b+,True,False,910,910,0.9
+7152,2178,java-intermediate+java-beginner,java-intermediate,6/2/2017 12:00:00 AM,1/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,bfsi,aviation,fci,False,b,True,True,900,900,1
+7323,274,java-intermediate+java-beginner,java-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,nagarro,gaming,gaming,mre,False,b,True,False,900,900,1
+7533,273,java-intermediate+java-beginner,java-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,nagarro,gaming,gaming,mre,False,b+,True,False,895,895,1.05
+9374,2083,java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,gaming,bfsi,onb,False,b+,True,False,905,905,0.95
+8598,712,java-beginner,java-beginner,7/16/2017 12:00:00 AM,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,,nagarro,ecommerce,,sne,False,b+,False,False,900,900,1
+8658,200,java-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b,True,False,910,910,0.9
+8409,2717,java-beginner,java-beginner,7/16/2017 12:00:00 AM,1/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,blackbaud,nagarro,ecommerce,,sne,False,b,False,False,910,910,0.9
+8756,2088,java-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,gaming,bfsi,onb,False,b,True,False,910,910,0.9
+6702,269,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-intermediate+ oracle-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,nagarro,gaming,gaming,mre,False,b+,True,True,905,905,0.95
+6288,468,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-expert+ oracle-expert,8/1/2017 12:00:00 AM,12/15/2016 12:00:00 AM,7/31/2017 12:00:00 AM,,customer analytics,aviation,,fdp,False,b+,False,True,920,920,0.8
+6734,205,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,aviation,aviation,fci,False,b,True,False,905,905,0.95
+6583,203,java-expert+ oracle-expert+java-intermediate+java-beginner+ oracle-intermediate+ oracle-beginner,java-intermediate,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,aviation,aviation,fci,False,b+,True,False,910,910,0.9
+6974,2270,java-intermediate+ oracle-intermediate+java-beginner+ oracle-beginner,java-intermediate+ oracle-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,blackbaud+ customer analytics,nagarro,gaming,gaming,mre,False,b+,True,False,895,895,1.05
+6547,2725,java-expert+ oracle-intermediate+java-intermediate+java-beginner+ oracle-beginner,java-intermediate+ oracle-intermediate,7/16/2017 12:00:00 AM,3/1/2017 12:00:00 AM,7/15/2017 12:00:00 AM,blackbaud,nagarro,ecommerce,,sne,False,b+,False,False,930,930,0.7
+6228,270,java-expert+ oracle-intermediate+java-intermediate+java-beginner+ oracle-beginner,java-intermediate+ oracle-intermediate,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,nagarro,ecommerce,gaming,mre,False,b+,True,False,945,945,0.55
+7976,2198,java-beginner+ oracle-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,shopperstop,aviation solutions,ecommerce,aviation,fci,False,b+,True,False,920,920,0.8
+9665,2084,java-beginner+ oracle-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,blackbaud,ifs bank,ecommerce,bfsi,onb,False,b+,True,False,905,905,0.95
+7510,2185,android-expert+android-intermediate+android-beginner,android-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b+,True,False,920,920,0.8
+7483,2191,ios-intermediate+ios-beginner,ios-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,bfsi,aviation,fci,False,b+,True,False,920,920,0.8
+7147,189,ios-intermediate+ios-beginner,ios-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,blackbaud,aviation solutions,ecommerce,aviation,fci,False,b+,True,False,925,925,0.75
+7544,2186,android-intermediate+android-beginner,android-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b+,True,False,920,920,0.8
+7719,185,android-beginner,android-beginner,6/2/2017 12:00:00 AM,2/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,gaming,aviation,fci,False,b+,True,False,915,915,0.85
+7480,125,android-beginner,android-beginner,3/2/2017 12:00:00 AM,11/1/2016 12:00:00 AM,3/1/2017 12:00:00 AM,swissair+ lufthansa,ge,gaming,industrial automation,inf,False,b,True,False,915,915,0.85
+8596,2201,java-beginner+ aws cloud-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,customer analytics,aviation solutions,gaming,aviation,fci,False,b+,True,False,915,915,0.85
+8867,2080,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,customer analytics,ifs bank,,bfsi,onb,False,b+,True,False,890,890,1.1
+8900,2197,java-beginner+ aws cloud-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,nagarro,aviation solutions,gaming,aviation,fci,False,a,True,False,900,900,1
+8888,2199,java-beginner+ aws cloud-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,,aviation,fci,False,b,True,False,890,890,1.1
+8341,81,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,,bfsi,onb,False,b,True,False,895,895,1.05
+9986,197,java-beginner+ aws cloud-beginner,java-beginner,6/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,6/1/2017 12:00:00 AM,,aviation solutions,manufacturing,aviation,fci,False,b+,True,False,900,900,1
+9594,2085,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,manufacturing,bfsi,onb,False,b+,True,False,905,905,0.95
+8670,83,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,,bfsi,onb,False,b+,True,False,890,890,1.1
+8644,82,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,,bfsi,onb,False,b,True,False,895,895,1.05
+9367,78,java-beginner+ aws cloud-beginner,java-beginner,12/2/2017 12:00:00 AM,3/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,ifs bank,,bfsi,onb,False,b+,True,False,885,885,1.15
+9245,2735,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,1/1/2018 12:00:00 AM,7/1/2017 12:00:00 AM,12/31/2017 12:00:00 AM,netenvironment,tbx,,energy & utilities,mbs,True,a+,False,False,900,900,1
+8707,174,.net-beginner+ sql server-beginner,.net-beginner,12/2/2017 12:00:00 AM,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,,ge,,industrial automation,inf,False,b,True,False,880,880,1.2
+8685,2243,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+6993,2647,.net-intermediate+.net-beginner,.net-beginner,12/2/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,aviation solutions,aviation solutions,,,mfr,False,b+,True,False,890,890,1.1
+7045,2648,.net-intermediate+.net-beginner,.net-beginner,12/2/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,aviation solutions,aviation solutions,,,mfr,False,b+,True,False,890,890,1.1
+6520,645,.net-intermediate+.net-beginner,.net-beginner,12/2/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,aviation solutions,aviation solutions,life sciences,,mfr,False,b+,True,False,925,925,0.75
+7219,973,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,aviation solutions+ ge,ge,,,wpe,False,b+,True,False,890,890,1.1
+6431,969,.net-expert+.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,ge,ge,industrial automation,,wpe,False,b+,True,False,905,905,0.95
+6432,976,.net-expert+.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,lutron,ge,industrial automation,,wpe,False,b+,True,False,935,935,0.65
+7311,972,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,aviation solutions+ ge,ge,,,wpe,False,b+,True,False,890,890,1.1
+7385,2979,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,,,wpe,True,a+,True,False,870,870,1.3
+6490,2974,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,media & entertainment,,wpe,False,b+,True,False,930,930,0.7
+7782,967,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,,,wpe,True,a,True,False,870,870,1.3
+6936,971,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,,,wpe,False,a,True,False,885,885,1.15
+7859,2970,.net-intermediate+.net-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,,,wpe,False,b+,True,False,880,880,1.2
+8731,2653,.net-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,tbx,aviation solutions,energy & utilities,,mfr,False,a,True,False,900,900,1
+8386,2475,.net-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,tbx,netenvironment,public sector,life sciences,cdd,False,b+,True,False,915,915,0.85
+9503,2645,.net-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,sne,aviation solutions,,,mfr,False,b+,True,False,885,885,1.15
+8694,2472,.net-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,sne,netenvironment,gaming,life sciences,cdd,False,b,True,False,910,910,0.9
+8920,2654,.net-beginner,.net-beginner,7/1/2017 12:00:00 AM,2/10/2017 12:00:00 AM,6/30/2017 12:00:00 AM,blackbaud,aviation solutions,public sector,,mfr,False,a,True,False,900,900,1
+8509,2476,.net-beginner,.net-beginner,10/1/2019 12:00:00 AM,6/15/2017 12:00:00 AM,9/30/2019 12:00:00 AM,tbx,netenvironment,gaming,life sciences,cdd,False,b+,True,False,915,915,0.85
+6625,2971,.net-expert+ sharepoint-expert+.net-intermediate+.net-beginner+ sharepoint-intermediate+ sharepoint-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,blackbaud,ge,media & entertainment,,wpe,False,a,True,False,915,915,0.85
+6355,2334,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,.net-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,,sne,public sector,,wms,False,b+,False,False,920,920,0.8
+6675,2976,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,public sector,,wpe,False,b+,True,False,915,915,0.85
+9746,158,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,12/2/2017 12:00:00 AM,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,blackbaud,ge,,industrial automation,inf,False,b,True,False,880,880,1.2
+9868,245,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,blackbaud,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+8004,243,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,tbx,ge,energy & utilities,industrial automation,inf,False,b+,True,False,905,905,0.95
+8109,2177,.net-beginner+ sql server-beginner,.net-beginner,12/2/2017 12:00:00 AM,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,tbx,ge,,industrial automation,inf,False,b+,True,False,885,885,1.15
+9536,247,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,sne,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+9703,248,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,sne,ge,,industrial automation,inf,False,b,True,False,880,880,1.2
+9808,159,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,12/2/2017 12:00:00 AM,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,sne,ge,,industrial automation,inf,False,b,True,False,880,880,1.2
+9455,160,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,12/2/2017 12:00:00 AM,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,sne,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+9566,161,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,12/2/2017 12:00:00 AM,12/1/2016 12:00:00 AM,12/1/2017 12:00:00 AM,sne,ge,,industrial automation,inf,False,b+,True,False,880,880,1.2
+8741,249,.net-beginner+ sql server-beginner,.net-beginner+ sql server-beginner,3/2/2018 12:00:00 AM,6/1/2017 12:00:00 AM,3/1/2018 12:00:00 AM,blackbaud,ge,,industrial automation,inf,False,b+,True,False,885,885,1.15
+7551,2967,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,,ge,gaming,,wpe,False,b+,True,False,905,905,0.95
+7078,2968,.net-intermediate+ wpf-intermediate+.net-beginner+ wpf-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,admiral,ge,gaming,,wpe,False,b+,True,False,910,910,0.9
+7895,2969,.net-intermediate+ mongodb-intermediate+.net-beginner+ mongodb-beginner,.net-intermediate,1/2/2018 12:00:00 AM,10/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,tbx,ge,media & entertainment,,wpe,False,b+,True,False,900,900,1
+8017,983,.net-beginner+ mongodb-beginner,.net-beginner+ mongodb-beginner,1/2/2018 12:00:00 AM,11/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,netenvironment,ge,media & entertainment,,wpe,False,a,True,False,900,900,1
+8155,981,.net-beginner+ mongodb-beginner,.net-beginner+ mongodb-beginner,1/2/2018 12:00:00 AM,11/1/2017 12:00:00 AM,1/1/2018 12:00:00 AM,netenvironment,ge,energy & utilities,,wpe,False,b+,True,False,910,910,0.9
+993,2333,.net-intermediate+.net-beginner,.net-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,aviation solutions,sne,,,wms,False,b+,False,False,900,900,1
+1045,331,.net-intermediate+.net-beginner,.net-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,aviation solutions,sne,,,wms,False,b+,False,False,900,900,1
+520,2332,.net-intermediate+.net-beginner,.net-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,aviation solutions,sne,life sciences,,wms,False,b+,False,False,935,935,0.65
+6993,332,.net-intermediate+.net-beginner,.net-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,aviation solutions,sne,,,wms,False,b+,False,False,900,900,1
+7045,333,.net-intermediate+.net-beginner,.net-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,aviation solutions,sne,,,wms,False,b+,False,False,900,900,1
+6520,334,.net-intermediate+.net-beginner,.net-intermediate,12/2/2017 12:00:00 AM,7/1/2017 12:00:00 AM,12/1/2017 12:00:00 AM,aviation solutions,sne,life sciences,,wms,False,b+,False,False,935,935,0.65

@@ -34,8 +34,10 @@ namespace Calculation
 
                     if(IsWithPanelty)
                     {
-                         TimeSpan ts = opn.AllocationEndDate - opn.RequestStartDate;
-                        score = Math.Max(0, score - ((ts.Days)/36) * 0.0); // panelty factor assume 0.2
+                        TimeSpan ts1 = opn.RequestStartDate - res.AvlDate;
+                        TimeSpan ts2 = opn.AllocationEndDate - res.AvlDate;
+                    
+                    score = Math.Max(0, score - ((ts1.Add(ts2).Days) /36) * 0.02); // panelty factor assume 0.2
                     }
 
                 }
@@ -73,5 +75,7 @@ namespace Calculation
 
             return 1000 - Convert.ToInt32(score * 100); ;
         }
+
+
     }
 }

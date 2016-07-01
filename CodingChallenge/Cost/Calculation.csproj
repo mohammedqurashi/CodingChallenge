@@ -99,12 +99,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Combination.cs" />
+    <Compile Include="FileWriter.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="LAPJV.cs" />
     <Compile Include="Openning.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.cs" />
+    <Compile Include="Revaluate.cs" />
     <Compile Include="Scoring.cs" />
+    <Compile Include="XmlLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

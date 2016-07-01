@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cost.exe" size="28160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cost.exe" size="30720">
       <assemblyIdentity name="Cost" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PL7w+IGkWfG6xQPXovDh3JHr/NkuMdYkPV/Tckyz7pI=</dsig:DigestValue>
+        <dsig:DigestValue>/fDG+9/eDMFobSec8a/GMV4UywSgAql/V128HqGoohw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -11,8 +11,6 @@ namespace Calculation
     class Program
     {
         //global variables
-        private static char[] charSeparators = new char[] { ',' };
-        private static IFormatProvider culture = new System.Globalization.CultureInfo("hi-IN", true);
         private static int passCounter;
         static List<Combination> blockCombination = new List<Combination>();
 
@@ -23,10 +21,13 @@ namespace Calculation
             Stopwatch sw = new Stopwatch();
             sw.Start(); Console.WriteLine("Start:" + sw.Elapsed);
 
-            var resources = ResourceMapping(); //Load and map resouces from resource input xml
-            var openings = OpeningMapping();   //Load amd map opening from opening input xml
-            List<Resource> originalResouces = new List<Resource>(resources);
-            List<Openning> originalOpenings = new List<Openning>(openings);
+
+            FileWriter fileWriter = new FileWriter();
+            XmlLoader xmlLoader = new XmlLoader();
+            var resources = xmlLoader.ResourceMapping(); //Load and map resouces from resource input xml
+            var openings = xmlLoader.OpeningMapping();   //Load amd map opening from opening input xml
+            List<Resource> originalResouces =  new List<Resource>(resources);
+            List<Openning> originalOpenings =  new List<Openning>(openings);
             var result = new List<Combination>();
             var costs = CostCalculation(resources, openings, blockCombination, true);
             bool isRevaluationRequired = false;
@@ -41,17 +42,21 @@ namespace Calculation
                 result = SolveItertiveLAP(ref resourceAssignments, resources, openings, costs);
                 isRevaluationRequired = ProjectAverageScore(result); //Calculate Average Project Score
                 resourceAssignments = ResetResourceAssignment(resources);
-                openings = OpeningMapping();
-                resources = ResourceMapping(); 
+                resources = xmlLoader.ResourceMapping();
+                openings  = xmlLoader.OpeningMapping();
             } while (isRevaluationRequired);
 
+
             
-
-
-            WriteCSV(result, originalResouces, originalOpenings, "2390_Superman_" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
+            fileWriter.WriteCSV(result, originalResouces, originalOpenings, "2390_Mowgli_" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
             sw.Stop(); Console.WriteLine("End Calculation :" + sw.Elapsed); Console.ReadKey();
         }
 
+        /// <summary>
+        /// reset resource assignment for multiple PASS evaluation
+        /// </summary>
+        /// <param name="resources"></param>
+        /// <returns></returns>
         private static int[] ResetResourceAssignment(List<Resource> resources) {
 
             var resourceAssignments = new int[resources.Count()];
@@ -76,7 +81,7 @@ namespace Calculation
             {
                 var passResultCombination = PassIteration(ref resourceAssignments, resources, openings, costs);
                 count = passResultCombination.Count();
-                costs = CostCalculation(resources, openings, blockCombination,false);
+                costs = CostCalculation(resources, openings, blockCombination,true);
                 result = result.Concat(passResultCombination).ToList();
             } while (count > 0);
 
@@ -93,11 +98,11 @@ namespace Calculation
         /// <returns></returns>
         private static List<Combination> PassIteration(ref int[] resourceAssignments, List<Resource> resources, List<Openning> openings, int[,] costs)
         {
-            Console.WriteLine("Next PASS " + passCounter.ToString() + " started");
+            Console.WriteLine("PASS " + passCounter.ToString() + " started.....");
             resourceAssignments = NextResourcePoolAssignment(ref resourceAssignments, resources, openings, costs);
-            var newcosts = CostCalculation(resources, openings, blockCombination, false);
+            var newcosts = CostCalculation(resources, openings, blockCombination, true);
             var passResultCombination = PopulateResultCombinations(resourceAssignments, resources, openings, newcosts);
-            Console.WriteLine("Pass "  + passCounter.ToString() + " complete");
+            Console.WriteLine("Pass "  + passCounter.ToString() + " completed");
             passCounter++;
             return passResultCombination;
         }
@@ -115,7 +120,7 @@ namespace Calculation
 
             //Calculate remaining resource-opening mapping
             var unmatchOpenings = RemainingOpenings(ref resourceAssignments,ref resources, ref openings, costs);
-            var cost = CostCalculation(resources, openings, blockCombination, false);
+            var cost = CostCalculation(resources, openings, blockCombination, true);
 
             var rowSol = new int[resources.Count()];
             var output = LAPJV.FindAssignments(ref rowSol, cost);
@@ -202,164 +207,6 @@ namespace Calculation
         }
 
         /// <summary>
-        /// Write CSV file
-        /// </summary>
-        /// <param name="resourceAssignments"></param>
-        /// <param name="res"></param>
-        /// <param name="opn"></param>
-        /// <param name="costs"></param>
-        /// <param name="costTrue"></param>
-        /// <param name="fileName"></param>
-        private static void WriteCSV(List<Combination> combi, List<Resource> res, List<Openning> opn, string fileName) 
-        {
-            string filePath = @"xml\"+ fileName;
-            string delimiter = ",";
-            StringBuilder sb = new StringBuilder();
-
-            //header to csv
-            sb.AppendLine("EmployeeId,RequestId,Skills,MandotaroySkilss,AvlDate,RequestStartDate,AllocationEndDate,PreviousCustomerExperiance,CustomerName,DomainExperiance,ProjectDomain,ProjectKey,NAGP,Rating,IsKeyProject,IsKeyPosition,cost1,cost2,score");
-
-                    foreach (var item in combi)
-                    {
-    
-                        var rs = res.Find(r=>r.EmployeeId == item.EmpolyeeId);
-                        var op = opn.Find(o=> o.RequestId == item.RequestId);
-                        var cst = item.Cost;
-                        double score = (1000 - cst) *0.01;
-                        sb.AppendLine(string.Join(delimiter, rs.EmployeeId,
-                                                             op.RequestId,
-                                                             String.Join("+", rs.Skills.ToArray()),
-                                                             op.MandotaroySkilss.Count() > 0 ? String.Join("+", op.MandotaroySkilss.ToArray()) : "",
-                                                             rs.AvlDate,
-                                                             op.RequestStartDate,
-                                                             op.AllocationEndDate,
-                                                             rs.PreviousCustomerExperiance.Count() > 0 ? String.Join("+", rs.PreviousCustomerExperiance.ToArray()) : "" ,
-                                                             op.CustomerName,
-                                                             rs.DomainExperiance.Count() > 0 ? String.Join("+", rs.DomainExperiance.ToArray()) : "",
-                                                             op.ProjectDomain.Count() > 0 ? String.Join("+", op.ProjectDomain.ToArray()): "",
-                                                             op.ProjectKey,
-                                                             rs.NAGP,
-                                                             rs.Rating,
-                                                             op.IsKeyProject,
-                                                             op.IsKeyPosition,
-                                                             cst,
-                                                             cst,
-                                                             score));
-                    }
-
-         
-                    
-           
-              File.WriteAllText(filePath, sb.ToString());
-
-        }
-
-        /// <summary>
-        /// Load data from xml to datatable
-        /// </summary>
-        /// <param name="filePath"></param>
-        /// <returns>data table</returns>
-        private static DataTable LoadXML(string filePath)
-        {
-            DataSet ds = new DataSet();
-            ds.ReadXml(filePath, XmlReadMode.Auto);
-            return ds.Tables[0];
-        }
-
-        /// <summary>
-        /// Load and Map resource from xml
-        /// </summary>
-        /// <returns>list of resources</returns>
-        private static List<Resource> ResourceMapping()
-        {
-            List<Resource> resources = new List<Resource>();
-
-            //  Loading resource
-            foreach (var item in LoadXML("xml/Datasheet_Resources.xml").AsEnumerable())
-            {
-                Resource res = new Resource();
-                res.EmployeeId                 = Convert.ToInt32(item["EmployeeID"]);
-                res.DOJ                        = Convert.ToDateTime(item["DOJ"], culture);
-                res.Skills                     = PrepareSkillList(Convert.ToString(item["Skills"]).ToLower().Trim());
-                res.DomainExperiance           = Convert.ToString(item["DomainExperience"]).ToLower().Split(charSeparators,StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
-                res.Rating                     = Convert.ToString(item["Rating"]).ToLower();
-                res.CommunicationRating        = Convert.ToString(item["CommunicationsRating"]).ToLower();
-                res.NAGP                       = Convert.ToString(item["NAGP"]).ToLower() == "y" ? true : false;
-                res.YearsOfExperiance          = Convert.ToDouble(item["YearsOfExperience"]);
-                res.CurrentRole                = Convert.ToString(item["CurrentRole"]).ToLower();
-                res.PreviousCustomerExperiance = Convert.ToString(item["PreviousCustomerExperience"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
-                res.AvlDate                    = Convert.ToDateTime(item["AvailableFromDate"], culture);
-                resources.Add(res);
-            }
-
-            return resources;
-        }
-
-        /// <summary>
-        /// Load and Map opening from xml
-        /// </summary>
-        /// <returns>list of openings</returns>
-        private static List<Openning> OpeningMapping()
-        {
-            List<Openning> openings = new List<Openning>();
-            
-            //Loading openings
-            foreach (var item in LoadXML("xml/Datasheet_Openings.xml").AsEnumerable())
-            {
-                Openning opnn = new Openning();
-                opnn.RequestId           = Convert.ToInt32(item["RequestID"]);
-                opnn.ClientKey           = Convert.ToString(item["ClientKey"]).ToLower();
-                opnn.ProjectKey          = Convert.ToString(item["ProjectKey"]).ToLower();
-                opnn.CustomerName        = Convert.ToString(item["CustomerName"]).ToLower();
-                opnn.ProjectName         = Convert.ToString(item["ProjectName"]).ToLower();
-                opnn.ProjectDomain       = Convert.ToString(item["ProjectDomain"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
-                opnn.IsKeyProject        = Convert.ToString(item["IsKeyProject"]).ToLower() == "y" ? true : false;
-                opnn.ProjectStartDate    = Convert.ToDateTime(item["ProjectStartDate"], culture);
-                opnn.ProjectEndDate      = Convert.ToDateTime(item["ProjectEndDate"], culture);
-                opnn.Role                = Convert.ToString(item["Role"]).ToLower();
-                opnn.IsKeyPosition       = Convert.ToString(item["IsKeyPosition"]).ToLower() == "y" ? true : false;
-                opnn.YearsOfExperiance   = Convert.ToDouble(item["YearsOfExperience"]);
-                opnn.MandotaroySkilss    = Convert.ToString(item["MandatorySkills"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>(); 
-                opnn.ClientCommunication = Convert.ToString(item["ClientCommunication"]).ToLower() == "y" ? true : false;
-                opnn.RequestStartDate    = Convert.ToDateTime(item["RequestStartDate"], culture);
-                opnn.AllocationEndDate   = Convert.ToDateTime(item["AllocationEndDate"], culture);
-                openings.Add(opnn);
-            }
-            
-            return openings;
-        }
-
-        /// <summary>
-        /// Prepare skill list
-        /// </summary>
-        /// <param name="skill"></param>
-        /// <returns>list of skills</returns>
-        private static List<string> PrepareSkillList(string skill)
-        {
-            var skillList = skill.ToLower().Split(',');
-            var mainTech = "";
-            foreach (var item in skillList)
-            {
-                if (item.Contains("expert"))
-                {
-                    Array.Resize(ref skillList, skillList.Length + 2);
-                    mainTech = item.Substring(0, item.IndexOf('-')).ToLower();
-                    skillList[skillList.Length - 2] = mainTech + "-intermediate";
-                    skillList[skillList.Length - 1] = mainTech + "-beginner";
-                }
-                else if (item.Contains("intermediate"))
-                {
-                    Array.Resize(ref skillList, skillList.Length + 1);
-                    mainTech = item.Substring(0, item.IndexOf('-')).ToLower();
-                    skillList[skillList.Length - 1] = mainTech + "-beginner";
-                }
-                mainTech = "";
-            }
-
-            return skillList.ToList<string>();
-        }
-
-        /// <summary>
         /// populate employee, opening and cost collection
         /// </summary>
         /// <param name="rowSol"></param>
@@ -370,7 +217,7 @@ namespace Calculation
         private static List<Combination> PopulateResultCombinations(int[] rowSol, List<Resource> resources, List<Openning> openings, int[,] costs) {
 
             List<Combination> combinations = new List<Combination>();
-
+            Scoring score = new Scoring();
             for (int i = 0; i < rowSol.Length; i++)
             {
                 if (rowSol[i] > -1 && costs[i, rowSol[i]]< 1000)
@@ -380,7 +227,7 @@ namespace Calculation
                         EmpolyeeId = resources.ElementAt(i).EmployeeId,
                         RequestId = openings.ElementAt(rowSol[i]).RequestId,
                         ProjectKey = openings.ElementAt(rowSol[i]).ProjectKey,
-                        Cost = costs[i, rowSol[i]]
+                        Cost = score.CalculatedIndivisualScore(resources.ElementAt(i), openings.ElementAt(rowSol[i]), false) 
                     });
 
                 }

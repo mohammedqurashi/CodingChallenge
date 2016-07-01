@@ -5,6 +5,13 @@ namespace Calculation
 {
     public class Resource
     {
+        //public Resource()
+        //{
+        //    Resource other = (Resource)this.MemberwiseClone();
+        //    other.Rating = String.Copy(Rating);
+        //}
+
+      
         public int EmployeeId { get; set; }
         public DateTime DOJ { get; set; }
         public List<string> Skills { get; set; }

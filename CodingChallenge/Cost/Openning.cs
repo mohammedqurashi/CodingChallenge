@@ -5,6 +5,7 @@ namespace Calculation
 {
     public class Openning
     {
+       
         public int RequestId { get; set; }
         public string ClientKey { get; set; }
         public string ProjectKey { get; set; }
