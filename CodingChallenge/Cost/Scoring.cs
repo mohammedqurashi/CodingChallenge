@@ -37,7 +37,7 @@ namespace Calculation
                         TimeSpan ts1 = opn.RequestStartDate - res.AvlDate;
                         TimeSpan ts2 = opn.AllocationEndDate - res.AvlDate;
                     
-                    score = Math.Max(0, score - ((ts1.Add(ts2).Days) /36) * 0.02); // panelty factor assume 0.2
+                        score = Math.Max(0.1, score - ((ts1.Add(ts2).Days) /36) * 0.02); // panelty factor assume 0.2
                     }
 
                 }

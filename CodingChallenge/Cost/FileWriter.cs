@@ -24,7 +24,7 @@ namespace Calculation
             StringBuilder sb = new StringBuilder();
 
             //header to csv
-            sb.AppendLine("EmployeeId,RequestId,Skills,MandotaroySkilss,AvlDate,RequestStartDate,AllocationEndDate,PreviousCustomerExperiance,CustomerName,DomainExperiance,ProjectDomain,ProjectKey,NAGP,Rating,IsKeyProject,IsKeyPosition,cost1,cost2,score");
+            sb.AppendLine("EmployeeId,RequestId,Skills,MandotaroySkilss,AvlDate,RequestStartDate,AllocationEndDate,PreviousCustomerExperiance,CustomerName,DomainExperiance,ProjectDomain,ProjectKey,NAGP,Rating,IsKeyProject,IsKeyPosition,ResourceExp,RequiredExp,cost1,cost2,score");
 
             foreach (var item in combi)
             {
@@ -49,6 +49,8 @@ namespace Calculation
                                                      rs.Rating,
                                                      op.IsKeyProject,
                                                      op.IsKeyPosition,
+                                                     rs.YearsOfExperiance,
+                                                     op.YearsOfExperiance,
                                                      cst,
                                                      cst,
                                                      score));
