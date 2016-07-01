@@ -12,7 +12,7 @@ namespace Calculation
         //}
 
       
-        public int EmployeeId { get; set; }
+        public string EmployeeId { get; set; }
         public DateTime DOJ { get; set; }
         public List<string> Skills { get; set; }
         public string Rating { get; set; }

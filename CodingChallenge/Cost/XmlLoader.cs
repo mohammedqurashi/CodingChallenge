@@ -25,7 +25,7 @@ namespace Calculation
                 foreach (var item in LoadXML("xml/Datasheet_Resources.xml").AsEnumerable())
                 {
                     Resource res = new Resource();
-                    res.EmployeeId = Convert.ToInt32(item["EmployeeID"]);
+                    res.EmployeeId = Convert.ToString(item["EmployeeID"]).ToLower();
                     res.DOJ = Convert.ToDateTime(item["DOJ"], culture);
                     res.Skills = PrepareSkillList(Convert.ToString(item["Skills"]).ToLower().Trim());
                     res.DomainExperiance = PrepareDomainExperianceList(Convert.ToString(item["DomainExperience"])); //Convert.ToString(item["DomainExperience"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>();

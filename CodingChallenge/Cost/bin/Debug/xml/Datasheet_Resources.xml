@@ -24403,7 +24403,7 @@
 		<AvailableFromDate>01-06-2016</AvailableFromDate>
 	</record>
 	<record>
-		<EmployeeID>7777777</EmployeeID>
+		<EmployeeID>J142</EmployeeID>
 		<DOJ>07-09-1994</DOJ>
 		<Skills>IoT-Expert, Python-Expert, Electronics-Expert, Linux-Expert, Salesforce-Expert</Skills>
 		<DomainExperience>Aviation, BFSI, Ecommerce</DomainExperience>
@@ -24411,6 +24411,18 @@
 		<CommunicationsRating>A</CommunicationsRating>
 		<NAGP>N</NAGP>
 		<YearsOfExperience>5</YearsOfExperience>
+		<CurrentRole>Developer</CurrentRole>
+		<AvailableFromDate>01-01-2015</AvailableFromDate>
+	</record>
+	<record>
+		<EmployeeID>J143</EmployeeID>
+		<DOJ>07-09-1994</DOJ>
+		<Skills>IoT-Expert, Salesforce-Expert</Skills>
+		<DomainExperience>BFSI, Ecommerce</DomainExperience>
+		<Rating>A</Rating>
+		<CommunicationsRating>B</CommunicationsRating>
+		<NAGP>Y</NAGP>
+		<YearsOfExperience>4</YearsOfExperience>
 		<CurrentRole>Developer</CurrentRole>
 		<AvailableFromDate>01-01-2015</AvailableFromDate>
 	</record>
