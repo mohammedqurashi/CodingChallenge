@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <resource-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <record>
-    <RequestID>10001</RequestID>
-    <ClientKey>IFS</ClientKey>
-    <ProjectKey>XYZ</ProjectKey>
-    <CustomerName>IFS Bank</CustomerName>
-    <ProjectName>Online banking</ProjectName>
-    <IsKeyProject>Y</IsKeyProject>
-    <ProjectDomain>BFSI</ProjectDomain>
-    <ProjectStartDate>01-01-2016</ProjectStartDate>
-    <ProjectEndDate>01-01-2018</ProjectEndDate>
-    <Role>Developer</Role>
-    <IsKeyPosition>Y</IsKeyPosition>
-    <YearsOfExperience>8</YearsOfExperience>
-    <MandatorySkills>Python-Expert</MandatorySkills>
-    <ClientCommunication>N</ClientCommunication>
-    <RequestStartDate>01-05-2016</RequestStartDate>
-    <AllocationEndDate>01-01-2017</AllocationEndDate>
-  </record>
 	<record>
 		<RequestID>1</RequestID>
 		<ClientKey>IFS</ClientKey>
@@ -35117,5 +35099,217 @@
 		<ClientCommunication>N</ClientCommunication>
 		<RequestStartDate>01-07-2017</RequestStartDate>
 		<AllocationEndDate>01-12-2017</AllocationEndDate>
+	</record>
+	
+	
+	
+	
+	
+	<record>
+		<RequestID>10012</RequestID>
+		<ClientKey>SNE1</ClientKey>
+		<ProjectKey>SVM1</ProjectKey>
+		<CustomerName>SNE1</CustomerName>
+		<ProjectName>WMS1</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Python-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>01-01-2015</RequestStartDate>
+		<AllocationEndDate>01-03-2015</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10011</RequestID>
+		<ClientKey>SNE2</ClientKey>
+		<ProjectKey>WMS2</ProjectKey>
+		<CustomerName>SNE2</CustomerName>
+		<ProjectName>WMS2</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Python-Beginner, Electronics-Beginner, Linux-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-03-2015</RequestStartDate>
+		<AllocationEndDate>01-05-2015</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10010</RequestID>
+		<ClientKey>SNE3</ClientKey>
+		<ProjectKey>WMS3</ProjectKey>
+		<CustomerName>SNE3</CustomerName>
+		<ProjectName>WMS3</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2015</ProjectStartDate>
+		<ProjectEndDate>01-12-2015</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Python-Beginner, IoT-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-05-2015</RequestStartDate>
+		<AllocationEndDate>01-07-2015</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10009</RequestID>
+		<ClientKey>SNE4</ClientKey>
+		<ProjectKey>WMS4</ProjectKey>
+		<CustomerName>SNE4</CustomerName>
+		<ProjectName>WMS4</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Python-Beginner, Salesforce-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-07-2015</RequestStartDate>
+		<AllocationEndDate>01-09-2015</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10008</RequestID>
+		<ClientKey>SNE5</ClientKey>
+		<ProjectKey>WMS5</ProjectKey>
+		<CustomerName>SNE5</CustomerName>
+		<ProjectName>WMS5</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Python-Beginner, Linux-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-09-2015</RequestStartDate>
+		<AllocationEndDate>01-11-2015</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10007</RequestID>
+		<ClientKey>SNE6</ClientKey>
+		<ProjectKey>WMS6</ProjectKey>
+		<CustomerName>SNE6</CustomerName>
+		<ProjectName>WMS6</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Salesforce-Beginner, IoT-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-11-2015</RequestStartDate>
+		<AllocationEndDate>01-02-2016</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10006</RequestID>
+		<ClientKey>SNE7</ClientKey>
+		<ProjectKey>WMS7</ProjectKey>
+		<CustomerName>SNE7</CustomerName>
+		<ProjectName>WMS7</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>IoT-Beginner, Python-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-02-2016</RequestStartDate>
+		<AllocationEndDate>01-04-2016</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10005</RequestID>
+		<ClientKey>SNE8</ClientKey>
+		<ProjectKey>WMS8</ProjectKey>
+		<CustomerName>SNE8</CustomerName>
+		<ProjectName>WMS8</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Salesforce-Beginner, Python-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-04-2016</RequestStartDate>
+		<AllocationEndDate>01-06-2016</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10004</RequestID>
+		<ClientKey>SNE9</ClientKey>
+		<ProjectKey>WMS9</ProjectKey>
+		<CustomerName>SNE9</CustomerName>
+		<ProjectName>WMS9</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>IoT-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-06-2016</RequestStartDate>
+		<AllocationEndDate>01-08-2016</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10003</RequestID>
+		<ClientKey>SNE4</ClientKey>
+		<ProjectKey>WMS4</ProjectKey>
+		<CustomerName>SNE4</CustomerName>
+		<ProjectDomain>Aviation</ProjectDomain>
+		<ProjectName>WMS4</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Linux-Beginner, Salesforce-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-08-2016</RequestStartDate>
+		<AllocationEndDate>01-10-2016</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10002</RequestID>
+		<ClientKey>SNE1</ClientKey>
+		<ProjectKey>WMS1</ProjectKey>
+		<CustomerName>SNE1</CustomerName>
+		<ProjectName>WMS1</ProjectName>
+		<IsKeyProject>N</IsKeyProject>
+		<ProjectDomain>Ecommerce</ProjectDomain>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>N</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>Electronics-Beginner, Linux-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-10-2016</RequestStartDate>
+		<AllocationEndDate>01-12-2016</AllocationEndDate>
+	</record>
+	<record>
+		<RequestID>10001</RequestID>
+		<ClientKey>SNE2</ClientKey>
+		<ProjectDomain>BFSI</ProjectDomain>
+		<ProjectKey>WMS2</ProjectKey>
+		<CustomerName>SNE2</CustomerName>
+		<ProjectName>WMS2</ProjectName>
+		<IsKeyProject>Y</IsKeyProject>
+		<ProjectStartDate>01-06-2016</ProjectStartDate>
+		<ProjectEndDate>01-12-2017</ProjectEndDate>
+		<Role>Developer</Role>
+		<IsKeyPosition>Y</IsKeyPosition>
+		<YearsOfExperience>5</YearsOfExperience>
+		<MandatorySkills>IoT-Expert, Linux-Beginner</MandatorySkills>
+		<ClientCommunication>N</ClientCommunication>
+		<RequestStartDate>02-12-2016</RequestStartDate>
+		<AllocationEndDate>01-02-2017</AllocationEndDate>
 	</record>
 </resource-data>

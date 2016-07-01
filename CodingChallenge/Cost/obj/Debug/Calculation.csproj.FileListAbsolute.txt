@@ -13,4 +13,3 @@ C:\SourceCode\CodingChallenge\Cost\bin\Debug\Cost.application
 C:\SourceCode\CodingChallenge\Cost\obj\Debug\Cost.TrustInfo.xml
 C:\SourceCode\CodingChallenge\Cost\obj\Debug\Cost.exe.manifest
 C:\SourceCode\CodingChallenge\Cost\obj\Debug\Cost.application
-C:\SourceCode\CodingChallenge\Cost\obj\Debug\Calculation.csprojResolveAssemblyReference.cache

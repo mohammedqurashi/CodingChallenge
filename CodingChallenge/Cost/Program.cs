@@ -27,6 +27,9 @@ namespace Calculation
             var resources = xmlLoader.ResourceMapping(); //Load and map resouces from resource input xml
             var openings = xmlLoader.OpeningMapping();   //Load amd map opening from opening input xml
             List<Resource> originalResouces =  new List<Resource>(resources);
+
+            //var myResourceList = originalResouces.Clone();
+
             List<Openning> originalOpenings =  new List<Openning>(openings);
             var result = new List<Combination>();
             var costs = CostCalculation(resources, openings, blockCombination, true);
@@ -48,7 +51,7 @@ namespace Calculation
 
 
             
-            fileWriter.WriteCSV(result, originalResouces, originalOpenings, "2390_Mowgli_" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
+            fileWriter.WriteCSV(result, resources, openings, "2390_Mowgli_" + DateTime.Now.ToString("ddMMyyyhhmmss") + ".csv");
             sw.Stop(); Console.WriteLine("End Calculation :" + sw.Elapsed); Console.ReadKey();
         }
 

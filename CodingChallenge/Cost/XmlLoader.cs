@@ -28,7 +28,7 @@ namespace Calculation
                     res.EmployeeId = Convert.ToInt32(item["EmployeeID"]);
                     res.DOJ = Convert.ToDateTime(item["DOJ"], culture);
                     res.Skills = PrepareSkillList(Convert.ToString(item["Skills"]).ToLower().Trim());
-                    res.DomainExperiance = Convert.ToString(item["DomainExperience"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
+                    res.DomainExperiance = PrepareDomainExperianceList(Convert.ToString(item["DomainExperience"])); //Convert.ToString(item["DomainExperience"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
                     res.Rating = Convert.ToString(item["Rating"]).ToLower();
                     res.CommunicationRating = Convert.ToString(item["CommunicationsRating"]).ToLower();
                     res.NAGP = Convert.ToString(item["NAGP"]).ToLower() == "y" ? true : false;
@@ -60,14 +60,14 @@ namespace Calculation
                     opnn.ProjectKey = Convert.ToString(item["ProjectKey"]).ToLower();
                     opnn.CustomerName = Convert.ToString(item["CustomerName"]).ToLower();
                     opnn.ProjectName = Convert.ToString(item["ProjectName"]).ToLower();
-                    opnn.ProjectDomain = Convert.ToString(item["ProjectDomain"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
+                    opnn.ProjectDomain = PrepareDomainExperianceList(Convert.ToString(item["ProjectDomain"])); // Convert.ToString(item["ProjectDomain"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
                     opnn.IsKeyProject = Convert.ToString(item["IsKeyProject"]).ToLower() == "y" ? true : false;
                     opnn.ProjectStartDate = Convert.ToDateTime(item["ProjectStartDate"], culture);
                     opnn.ProjectEndDate = Convert.ToDateTime(item["ProjectEndDate"], culture);
                     opnn.Role = Convert.ToString(item["Role"]).ToLower();
                     opnn.IsKeyPosition = Convert.ToString(item["IsKeyPosition"]).ToLower() == "y" ? true : false;
                     opnn.YearsOfExperiance = Convert.ToDouble(item["YearsOfExperience"]);
-                    opnn.MandotaroySkilss = Convert.ToString(item["MandatorySkills"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
+                    opnn.MandotaroySkilss = PrepareMandatorySkill(Convert.ToString(item["MandatorySkills"]));//Convert.ToString(item["MandatorySkills"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>(); //
                     opnn.ClientCommunication = Convert.ToString(item["ClientCommunication"]).ToLower() == "y" ? true : false;
                     opnn.RequestStartDate = Convert.ToDateTime(item["RequestStartDate"], culture);
                     opnn.AllocationEndDate = Convert.ToDateTime(item["AllocationEndDate"], culture);
@@ -97,27 +97,69 @@ namespace Calculation
         /// <returns>list of skills</returns>
         private static List<string> PrepareSkillList(string skill)
         {
-            var skillList = skill.ToLower().Split(',');
             var mainTech = "";
+            var skillList = skill.ToLower().Split(',');
+            List<string> finalSkillList = new List<string>();
+
             foreach (var item in skillList)
             {
+                 mainTech = item.Substring(0, item.IndexOf('-')).ToLower();
+
                 if (item.Contains("expert"))
                 {
-                    Array.Resize(ref skillList, skillList.Length + 2);
-                    mainTech = item.Substring(0, item.IndexOf('-')).ToLower();
-                    skillList[skillList.Length - 2] = mainTech + "-intermediate";
-                    skillList[skillList.Length - 1] = mainTech + "-beginner";
+                    finalSkillList.Add(mainTech.Trim() + "-expert");
+                    finalSkillList.Add(mainTech.Trim() + "-intermediate");
+                    finalSkillList.Add(mainTech.Trim() + "-beginner");
                 }
                 else if (item.Contains("intermediate"))
                 {
-                    Array.Resize(ref skillList, skillList.Length + 1);
-                    mainTech = item.Substring(0, item.IndexOf('-')).ToLower();
-                    skillList[skillList.Length - 1] = mainTech + "-beginner";
+                    finalSkillList.Add(mainTech.Trim() + "-intermediate");
+                    finalSkillList.Add(mainTech.Trim() + "-beginner");
                 }
+                else
+                {
+                    finalSkillList.Add(mainTech.Trim() + "-beginner");
+                }
+
                 mainTech = "";
             }
 
-            return skillList.ToList<string>();
+            return finalSkillList;
+        }
+
+        /// <summary>
+        /// Prepare mandatory skill list
+        /// </summary>
+        /// <param name="mandatorySkill"></param>
+        /// <returns></returns>
+        private static List<string> PrepareMandatorySkill(string mandatorySkill) {
+
+            var mandatorySkillList = mandatorySkill.ToLower().Split(',');
+            List<string> finalMandatorySkillList = new List<string>();
+            foreach (var item in mandatorySkillList)
+            {
+                finalMandatorySkillList.Add(item.Trim().ToLower());
+            }
+
+            return finalMandatorySkillList;
+        }
+
+        /// <summary>
+        /// Prepare mandatory skill list
+        /// </summary>
+        /// <param name="mandatorySkill"></param>
+        /// <returns></returns>
+        private static List<string> PrepareDomainExperianceList(string domainExperiance)
+        {
+
+            var domainExperianceList = domainExperiance.ToLower().Split(',');
+            List<string> finalDomainExperianceList = new List<string>();
+            foreach (var item in domainExperianceList)
+            {
+                finalDomainExperianceList.Add(item.Trim().ToLower());
+            }
+
+            return finalDomainExperianceList;
         }
     }
 }
