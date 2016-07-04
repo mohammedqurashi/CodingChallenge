@@ -22,7 +22,7 @@ namespace Calculation
                 List<Resource> resources = new List<Resource>();
             
                 //  Loading resource
-                foreach (var item in LoadXML("xml/Datasheet_Resources.xml").AsEnumerable())
+                foreach (var item in LoadXML("Datasheet_Resources.xml").AsEnumerable())
                 {
                     Resource res = new Resource();
                     res.EmployeeId = Convert.ToString(item["EmployeeID"]).ToLower().Trim();
@@ -52,7 +52,7 @@ namespace Calculation
                 List<Openning> openings = new List<Openning>();
            
                 //Loading openings
-                foreach (var item in LoadXML("xml/Datasheet_Openings.xml").AsEnumerable())
+                foreach (var item in LoadXML("Datasheet_Openings.xml").AsEnumerable())
                 {
                     Openning opnn = new Openning();
                     opnn.RequestId = Convert.ToInt32(item["RequestID"]);
@@ -61,7 +61,7 @@ namespace Calculation
                     opnn.CustomerName = Convert.ToString(item["CustomerName"]).ToLower().Trim();
                     opnn.ProjectName = Convert.ToString(item["ProjectName"]).ToLower().Trim();
                     opnn.ProjectDomain = PrepareDomainExperianceList(Convert.ToString(item["ProjectDomain"])); // Convert.ToString(item["ProjectDomain"]).ToLower().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
-                    opnn.IsKeyProject = Convert.ToString(item["IsKeyProject"]).ToLower() == "y" ? true : false;
+                    opnn.IsKeyProject = Convert.ToString(item["IsKeyProject"]).ToLower().Trim() == "y" ? true : false;
                     opnn.ProjectStartDate = Convert.ToDateTime(item["ProjectStartDate"], culture);
                     opnn.ProjectEndDate = Convert.ToDateTime(item["ProjectEndDate"], culture);
                     opnn.Role = Convert.ToString(item["Role"]).ToLower().Trim();
